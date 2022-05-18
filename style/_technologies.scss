@@ -1,0 +1,188 @@
+$background : rgb(255, 255, 255);
+$box-shadow_html: 0px 10px 0px 0px rgb(234, 90, 90);
+$box-shadow_css: 0px 10px 0px 0px rgb(22, 161, 220);
+$box-shadow_bootstrap: 0px 10px 0px 0px rgb(86, 61, 124);
+$box-shadow_github: 0px 10px 0px 0px #000;
+$color_html : rgb(228, 76, 37);
+$color_css: rgb(22, 161, 220);
+$color_bootstrap: rgb(86, 61, 124);
+$color_github: #000;
+$color_wordpress: rgb(46, 114, 159);
+$color_javascript: rgb(240, 190, 37);
+$color_php: black;
+$color_java: blue;
+
+#techno {
+    .container_techno {
+        display: grid;
+        grid-gap: 10px;
+
+        .container_txt_icon_html {
+            //max-width: 30%;
+            padding-left: 10px;
+            grid-column: 1;
+            grid-row: 1;
+
+            .box {
+                background: $background;
+                padding: 30px 30px;
+                border-radius: 10px;
+                //margin-bottom: 20%;
+                box-shadow: $box-shadow_html;
+                border: dashed rgb(228, 76, 37);
+
+                #html {
+                    display: flex;
+                    justify-content: center;
+
+                    svg path {
+                        fill: $color_html;
+                        transition: 500ms linear;
+                    }
+
+                    &:hover {
+                        transform: scale(1.5);
+
+                    }
+                }
+            }
+
+        }
+
+
+        .container_txt_icon_css {
+            //max-width: 30%;
+            //padding: 0 15px;
+            grid-column: 2;
+            grid-row: 1;
+
+            .box {
+                background: $background;
+                padding: 30px 30px;
+                border-radius: 10px;
+                //margin-bottom: 20%;
+                box-shadow: $box-shadow_css;
+                border: dashed rgb(22, 161, 220);
+
+                #css {
+                    display: flex;
+                    justify-content: center;
+
+                    svg path {
+                        fill: $color_css;
+                        transition: 500ms linear;
+                    }
+
+                    &:hover {
+                        transform: scale(1.5);
+                    }
+
+                }
+            }
+        }
+
+        .container_txt_icon_bootstrap {
+            //max-width: 30%;
+            //padding: 0 15px;
+            grid-column: 3;
+            grid-row: 1;
+
+            .box {
+                background: $background;
+                padding: 30px 30px;
+                border-radius: 10px;
+               // margin-bottom: 20%;
+                box-shadow: $box-shadow_bootstrap;
+                border: dashed rgb(86, 61, 124);
+
+                #bootstrap {
+                    display: flex;
+                    justify-content: center;
+
+                    svg path {
+                        fill: $color_bootstrap;
+                        transition: 500ms linear;
+                    }
+
+                    &:hover {
+                        transform: scale(1.5);
+                    }
+                }
+
+            }
+        }
+
+        .container_txt_icon_git {
+            //max-width: 30%;
+            //padding-right: 10px;
+            grid-column: 4;
+            grid-row: 1;
+
+            .box {
+                background: $background;
+                padding: 30px 30px;
+                border-radius: 10px;
+                //margin-bottom: 20%;
+                box-shadow: $box-shadow_github;
+                border: dashed #000;
+
+                #github {
+                    display: flex;
+                    justify-content: center;
+
+                    svg path {
+                        fill: $color_github;
+                        transition: 500ms linear;
+                    }
+
+                    &:hover {
+                        transform: scale(1.5);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    #techno {
+        .container_techno {
+            display: grid;
+            grid-gap:40px;
+
+            .container_txt_icon_html {
+                display: flex;
+                justify-content: center;
+                grid-column: 1;
+                grid-row: 1;
+            }
+
+            .container_txt_icon_css {
+                display: flex;
+                justify-content: center;
+                grid-column: 1;
+                grid-row: 2;
+
+                .box{
+                    padding: 30px 70px;
+                }
+            }
+
+            .container_txt_icon_bootstrap {
+                display: flex;
+                justify-content: center;
+                grid-column: 1;
+                grid-row: 3;
+            }
+
+            .container_txt_icon_git {
+                display: flex;
+                justify-content: center;
+                grid-column: 1;
+                grid-row: 4;
+            }
+        }
+    }
+}

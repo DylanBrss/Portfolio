@@ -3,7 +3,7 @@ $background-image_2: url(../images/KomeWaza.png);
 $background-image_3: url(../images/Zanzibar.PNG);
 $box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
-#portfolio {
+#projets {
 
     .container_portfolio {
         display: grid;
@@ -79,7 +79,7 @@ $box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
 @media screen and (max-width: 1024px) {
 
-    #portfolio {
+    #projets {
         .container_portfolio {
             display: grid;
             grid-gap: 30px;

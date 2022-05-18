@@ -1,0 +1,60 @@
+$background-color_btn : #25abe4;
+$color_btn : #fff;
+
+#presentation {
+    margin-left: 100px;
+    margin-right: 100px;
+
+    .container_pres {
+        height: 300px;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+
+        #pres {
+            display: flex;
+
+            p {
+                font-size: 20px;
+                text-align: center;
+                margin-top: 100px;
+                font-style: italic;
+
+                span {
+                    font-weight: bold;
+                }
+            }
+        }
+
+        #img_pres {
+            display: flex;
+            justify-content: flex-end;
+
+            svg {
+                fill: #25abe4
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #presentation {
+        .container_pres {
+            height: 300px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            #pres {
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            #img_pres {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}

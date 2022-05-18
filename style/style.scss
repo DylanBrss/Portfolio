@@ -1,11 +1,10 @@
-@import "./scss/_header";
-@import "./scss/_accueil";
-@import "./scss/_competences";
-@import "./scss/test";
-@import "./scss/_technologies";
-@import "./scss/presentation";
-@import "./scss/projet";
-@import "./scss/footer";
+@import "_header";
+@import "_accueil";
+@import "_competences";
+@import "_technologies";
+@import "_presentation";
+@import "_projet";
+@import "_footer";
 
 $color_1: #25abe4;
 $background-color_h2: #feed05;
