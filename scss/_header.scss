@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+
+$background-color_nav: #00b4d8;
+$color_text : #fff;
+$color_a: rgb(241, 255, 50);
+$font-family_title: 'Zen Loop', cursive;
+$font-family_a: 'Macondo', cursive;
+
+header {
+
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+        background-color: $background-color_nav;
+
+        a {
+            color: $color_text;
+            font-family: $font-family_a;
+            text-decoration-line: none;
+        }
+
+        #titleNB {
+            font-family: $font-family_title;
+            font-size: 30px;
+            margin-left: 1.3em;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+
+            li {
+                list-style-type: none;
+                padding: 15px;
+
+                a:hover {
+                    color: $color_a;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        .nav {
+            position: relative;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}

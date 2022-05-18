@@ -1,0 +1,110 @@
+$background-image_1: url(../images/FlexCard.PNG);
+$background-image_2: url(../images/KomeWaza.png);
+$background-image_3: url(../images/Zanzibar.PNG);
+$box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+#portfolio {
+
+    .container_portfolio {
+        display: grid;
+        grid-gap: 30px;
+
+        .container_flexcard {
+            display: flex;
+            justify-content: flex-end;
+            grid-column: 1;
+            grid-row: 1;
+
+            #img_flexcard {
+                background-image: $background-image_1;
+                border-radius: 10px;
+                background-size: cover;
+                background-position: top center;
+                height: 300px;
+                width: 80%;
+                box-shadow: $box-shadow;
+                transition: 500ms linear;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .container_komewaza {
+            display: flex;
+            justify-content: flex-start;
+            grid-column: 2;
+            grid-row: 1;
+
+            #img_komewaza {
+                background-image: $background-image_2;
+                border-radius: 10px;
+                background-size: cover;
+                background-position: top center;
+                height: 300px;
+                width: 80%;
+                box-shadow: $box-shadow;
+                transition: 500ms linear;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .container_zanzibar {
+            display: flex;
+            justify-content: flex-end;
+            grid-column: 1;
+            grid-row: 2;
+
+            #img_zanzibar {
+                background-image: $background-image_3;
+                border-radius: 10px;
+                background-size: cover;
+                background-position: top center;
+                height: 300px;
+                width: 80%;
+                box-shadow: $box-shadow;
+                transition: 500ms linear;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    #portfolio {
+        .container_portfolio {
+            display: grid;
+            grid-gap: 30px;
+
+            .container_flexcard {
+                display: flex;
+                justify-content: center;
+                grid-column: 1;
+                grid-row: 1;
+
+            }
+
+            .container_komewaza {
+                display: flex;
+                justify-content: center;
+                grid-column: 1;
+                grid-row: 2;
+            }
+
+            .container_zanzibar {
+                display: flex;
+                justify-content: center;
+                grid-column: 1;
+                grid-row: 3;
+            }
+        }
+    }
+}

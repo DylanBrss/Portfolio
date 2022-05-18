@@ -1,0 +1,46 @@
+$background-color: #003e52;
+$color: #fff;
+
+#footer {
+    background-color: $background-color;
+    color: $color;
+
+    .info {
+        display: flex;
+        justify-content: space-evenly;
+
+        #contact {
+
+            h3 {
+                font-size: 40px;
+                text-decoration: underline;
+            }
+
+            p {
+                padding-top: 20px;
+
+                a {
+                    color: $color;
+                }
+            }
+        }
+
+        #reseaux {
+            h3 {
+                font-size: 40px;
+                text-decoration: underline;
+            }
+
+            a {
+                padding-top: 20px;
+                i {
+                    font-size: 90px;
+                    padding-right: 30px;
+                    color: $color;
+                }
+            }
+
+        }
+
+    }
+}

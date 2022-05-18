@@ -1,0 +1,205 @@
+$background-color_btn : #00b4d8;
+$color_btn : #fff;
+
+#accueil {
+    margin-left: 100px;
+    margin-right: 100px;
+
+    #container_accueil {
+        //  border: 1px solid #000;
+        border-radius: 10px;
+        height: 300px;
+        display: flex;
+        justify-content: space-around;
+
+        .img_left {
+            margin-top: 5%;
+
+            #pres_img {
+                padding: 50px;
+                margin: auto;
+
+                img {
+                    height: 200px;
+                    width: auto;
+                    //border: 1px solid rgb(14, 146, 223);
+                    border-radius: 100px;
+                }
+            }
+        }
+
+        .text_right {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 5%;
+
+            #mini_pres {
+                // padding: 30px;
+                // margin-left: 200px;
+                text-align: right;
+                //border: 1px solid rgb(210, 57, 57);
+                border-radius: 10px;
+                margin: auto;
+
+                #pres_txt {
+                    display: flex;
+                    justify-content: flex-end;
+                    flex-wrap: wrap;
+
+                    h1 {
+                        font-size: 170%;
+                    }
+                }
+
+                #btn {
+                    display: flex;
+                    justify-content: space-evenly;
+                    padding: 30px;
+
+                    .buttonCV {
+                        border: 1px solid #25abe4;
+                        background-color: $background-color_btn;
+                        color: $color_btn;
+                        padding: 20px;
+                        border-radius: 10px;
+                        text-decoration: none;
+                        transition: width 2s, height 2s, background-color 2s, transform 2s;
+
+                        &:hover {
+                            background-color: #fe1414;
+                            border: 1px solid #f41414;
+                            transform: rotate(360deg);
+                          } 
+                    }
+
+                    .buttonContact {
+                        border: 1px solid #25abe4;
+                        background-color: $background-color_btn;
+                        color: $color_btn;
+                        padding: 20px;
+                        border-radius: 10px;
+                        text-decoration: none;
+                        transition: width 2s, height 2s, background-color 2s, transform 2s;
+
+                        &:hover {
+                            background-color: #fe1414;
+                            border: 1px solid #f41414;
+                            transform: rotate(360deg);
+                          }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .img_left {
+        margin-top: 5%;
+
+        #pres_img {
+            padding: 50px;
+            margin: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .img_left {
+        margin-top: 5%;
+
+        #pres_img {
+            padding: 50px;
+            margin: auto;
+
+            img {
+                height: 200px;
+                border-radius: 100px;
+            }
+        }
+    }
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+//color/ui color variables
+$white: #ececec;
+$black: #333333;
+$yellow: #ffff00;
+$purple: #8a19ff;
+$colorPrimary: $yellow;
+$colorSecondary: $purple;
+
+//split button mixin
+@mixin btn__split($colorLeft, $colorRight, $textColor) {
+    .btn {
+        position: relative;
+        letter-spacing: 0.25em;
+        margin: 0 auto;
+        padding: 1rem 2.5rem;
+        background: transparent;
+        outline: none;
+        font-size: 28px;
+        color: $textColor;
+
+        &::after,
+        &::before {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 50%;
+            transform: skewX(30deg);
+            transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            z-index: -2;
+        }
+
+        &::before {
+            background-color: $colorLeft;
+            top: -1rem;
+            left: 0rem;
+        }
+
+        &::after {
+            background-color: $colorRight;
+            top: 1rem;
+            left: 8rem;
+        }
+
+        &:hover {
+
+            &::before,
+            &::after {
+                top: 0;
+                transform: skewx(0deg);
+            }
+
+            &::after {
+                left: 0rem;
+            }
+
+            &::before {
+                left: 8.75rem;
+            }
+        }
+    }
+}
+
+body,
+html {
+    height: 100%;
+}
+
+.container {
+    width: auto;
+    margin: auto;
+}
+
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+@include btn__split($colorPrimary, $colorSecondary, $black);
