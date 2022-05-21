@@ -37,14 +37,15 @@ $color_btn : #fff;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     #presentation {
         .container_pres {
             height: 300px;
             margin: auto;
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            align-items: center;
+            gap: 20px;
 
             #pres {
                 display: flex;

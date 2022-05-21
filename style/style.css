@@ -1,12 +1,17 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Macondo&display=swap");
+header {
+  /* Bar */
+  /* Gestion bouton croix*/
+}
+
 header #header_txt h3 {
   color: #000;
 }
 
 header #header_txt h3 a {
   color: #fff;
-  font-family: "Macondo", cursive;
+  font-family: "Smooch", cursive;
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
 }
@@ -22,6 +27,19 @@ header .wrapper {
   transition: all 0.6s ease-in-out;
 }
 
+header .wrapper #header_txt #titleNB {
+  font-family: "Smooch", cursive;
+  font-size: 30px;
+  position: absolute;
+  top: 80%;
+  left: 13%;
+  height: 90%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: left;
+}
+
 header .wrapper ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,10 +48,10 @@ header .wrapper ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  gap: 250px;
+  gap: 190px;
   position: absolute;
   top: 60%;
-  left: 50%;
+  left: 63%;
   height: 90%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -48,14 +66,15 @@ header .wrapper ul li {
 
 header .wrapper ul li a {
   text-decoration: none;
+  font-family: "Macondo", cursive;
   font-size: 30px;
   font-weight: 500;
-  padding: 5px 30px;
+  padding: 5px 10px;
   color: #fff;
   border-radius: 50px;
   position: absolute;
   line-height: 50px;
-  margin: 5px 30px;
+  margin: 5px 10px;
   opacity: 0;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -225,9 +244,53 @@ header .content p {
   font-weight: 600;
 }
 
+@media screen and (max-width: 1024px) {
+  header .wrapper {
+    height: 400px;
+  }
+  header .wrapper #header_txt #titleNB {
+    top: 50%;
+    left: 20%;
+  }
+  header .wrapper ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: 45%;
+    gap: 1px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1500px) {
+  header .wrapper {
+    height: 200px;
+  }
+  header .wrapper #header_txt #titleNB {
+    top: 50%;
+    left: 20%;
+  }
+  header .wrapper ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    top: 70%;
+    left: 53%;
+    gap: 175px;
+  }
+}
+
 #accueil {
   margin-left: 100px;
   margin-right: 100px;
+  padding-bottom: 150px;
 }
 
 #accueil #container_accueil {
@@ -297,43 +360,45 @@ header .content p {
 }
 
 #accueil #container_accueil .text_right #mini_pres #btn .buttonCV {
+  font-family: "Macondo", cursive;
   border: 1px solid #25abe4;
   background-color: #00b4d8;
   color: #fff;
   padding: 20px;
   border-radius: 10px;
   text-decoration: none;
-  -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
-  transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
-  transition: width 2s, height 2s, background-color 2s, transform 2s;
-  transition: width 2s, height 2s, background-color 2s, transform 2s, -webkit-transform 2s;
+  -webkit-transition: background 2s, -webkit-transform 2s;
+  transition: background 2s, -webkit-transform 2s;
+  transition: background 2s, transform 2s;
+  transition: background 2s, transform 2s, -webkit-transform 2s;
 }
 
 #accueil #container_accueil .text_right #mini_pres #btn .buttonCV:hover {
-  background-color: #fe1414;
-  border: 1px solid #f41414;
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+  background-color: #026b80;
+  border: 1px solid #fff;
+  -webkit-transform: background 0.5s 0s ease,  transform 0.5s 0s ease;
+          transform: background 0.5s 0s ease,  transform 0.5s 0s ease;
 }
 
 #accueil #container_accueil .text_right #mini_pres #btn .buttonContact {
+  font-family: "Macondo", cursive;
   border: 1px solid #25abe4;
   background-color: #00b4d8;
   color: #fff;
   padding: 20px;
   border-radius: 10px;
   text-decoration: none;
-  -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
-  transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
-  transition: width 2s, height 2s, background-color 2s, transform 2s;
-  transition: width 2s, height 2s, background-color 2s, transform 2s, -webkit-transform 2s;
+  -webkit-transition: background-color 2s, text-shadow 2s, -webkit-box-shadow 2s;
+  transition: background-color 2s, text-shadow 2s, -webkit-box-shadow 2s;
+  transition: box-shadow 2s, background-color 2s, text-shadow 2s;
+  transition: box-shadow 2s, background-color 2s, text-shadow 2s, -webkit-box-shadow 2s;
 }
 
 #accueil #container_accueil .text_right #mini_pres #btn .buttonContact:hover {
-  background-color: #fe1414;
-  border: 1px solid #f41414;
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+  background-color: #026b80;
+  border: 1px solid #fff;
+  -webkit-transform: box-shadow 1s 0.5s ease-in,  text-shadow 0.5s 0s linear,  background 0.5s 0s linear;
+          transform: box-shadow 1s 0.5s ease-in,  text-shadow 0.5s 0s linear,  background 0.5s 0s linear;
 }
 
 @media screen and (max-width: 1200px) {
@@ -362,16 +427,24 @@ header .content p {
 
 @media screen and (max-width: 768px) {
   #btn {
-    gap: 40px;
+    gap: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   #btn .buttonCV {
-    width: 110px;
-    height: 20px;
     text-align: center;
+    width: 80%;
+    height: 60px;
   }
   #btn .buttonContact {
-    width: 110px;
-    height: 20px;
+    text-align: center;
+    width: 80%;
+    height: 60px;
   }
 }
 
@@ -576,7 +649,7 @@ header .content p {
           transform: scale(1.5);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   #techno .container_techno {
     display: -ms-grid;
     display: grid;
@@ -680,7 +753,7 @@ header .content p {
   fill: #25abe4;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   #presentation .container_pres {
     height: 300px;
     margin: auto;
@@ -691,7 +764,10 @@ header .content p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 10px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 20px;
   }
   #presentation .container_pres #pres {
     display: -webkit-box;
@@ -913,6 +989,7 @@ body section {
 body h2 {
   color: #25abe4;
   font-size: 250%;
+  font-family: "Macondo", cursive;
   text-align: center;
   margin-top: 40px;
   margin-bottom: 30px;

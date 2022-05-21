@@ -1,0 +1,62 @@
+<nav class="nav">
+    <a id="titleNB" href="">BRISSEAU Dylan</a>
+    <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#techno">Technologies</a></li>
+        <li><a href="#presentation">Présentation</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#footer">Contact</a></li>
+    </ul>
+</nav>
+
+
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: $background-color_nav;
+
+    a {
+        color: $color_text;
+        font-family: $font-family_a;
+        text-decoration-line: none;
+    }
+
+    #titleNB {
+        font-family: $font-family_title;
+        font-size: 30px;
+        margin-left: 1.3em;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+
+        li {
+            list-style-type: none;
+            padding: 15px;
+
+            a:hover {
+                color: $color_a;
+            }
+        }
+    }
+}
+}
+
+@media screen and (max-width: 768px) {
+header {
+    .nav {
+        position: relative;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

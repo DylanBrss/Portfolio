@@ -4,7 +4,7 @@ $background-color_nav: #00b4d8;
 $color_text : #fff;
 $color_a: #fe1414;
 $color_black: #000;
-$font-family_title: 'Zen Loop', cursive;
+$font-family_title: 'Smooch', cursive;
 $font-family_a: 'Macondo', cursive;
 
 
@@ -22,6 +22,7 @@ header {
         }
     }
 
+    /* Bar */
     .wrapper {
         position: fixed;
         top: 0;
@@ -31,13 +32,27 @@ header {
         background: #00b4d8;
         transition: all 0.6s ease-in-out;
 
+        #header_txt {
+            #titleNB {
+                font-family: $font-family_title;
+                font-size: 30px;
+                position: absolute;
+                top: 80%;
+                left: 13%;
+                height: 90%;
+                transform: translate(-50%, -50%);
+                list-style: none;
+                text-align: left;
+            }
+        }
+
         ul {
             display: flex;
             flex-direction: row;
-            gap: 250px;
+            gap: 190px;
             position: absolute;
             top: 60%;
-            left: 50%;
+            left: 63%;
             height: 90%;
             transform: translate(-50%, -50%);
             list-style: none;
@@ -52,12 +67,12 @@ header {
                     font-family: $font-family_a;
                     font-size: 30px;
                     font-weight: 500;
-                    padding: 5px 30px;
+                    padding: 5px 10px;
                     color: $color_text;
                     border-radius: 50px;
                     position: absolute;
                     line-height: 50px;
-                    margin: 5px 30px;
+                    margin: 5px 10px;
                     opacity: 0;
                     transition: all 0.3s ease;
                     transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -130,6 +145,7 @@ header {
         }
     }
 
+    /* Gestion bouton croix*/
     .menu-btn {
         position: fixed;
         z-index: 2;
@@ -210,4 +226,49 @@ header {
         }
     }
 
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        .wrapper {
+            height: 400px;
+
+            #header_txt {
+                #titleNB {
+                    top: 50%;
+                    left: 20%;
+                }
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                top: 45%;
+                gap: 1px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1500px) {
+    header {
+        .wrapper {
+            height: 200px;
+
+            #header_txt {
+                #titleNB {
+                    top: 50%;
+                    left: 20%;
+                }
+            }
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                top: 70%;
+                left: 53%;
+                gap: 175px;
+            }
+        }
+    }
 }

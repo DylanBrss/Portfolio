@@ -5,6 +5,7 @@ $font-family_btn: 'Macondo', cursive;
 #accueil {
     margin-left: 100px;
     margin-right: 100px;
+    padding-bottom: 150px;
 
     #container_accueil {
         //  border: 1px solid #000;
@@ -129,18 +130,22 @@ $font-family_btn: 'Macondo', cursive;
 
 
 @media screen and (max-width: 768px) {
+    
     #btn{
-        gap: 40px;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
 
         .buttonCV{
-            width: 110px;
-            height: 20px;
             text-align: center;
+            width: 80%;
+            height: 60px;
         }
 
         .buttonContact{
-            width: 110px;
-            height: 20px;
+            text-align: center;
+            width: 80%;
+            height: 60px;
         }
     }    
 }
