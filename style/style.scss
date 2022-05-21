@@ -1,10 +1,10 @@
-@import "_header";
-@import "_accueil";
-@import "_competences";
-@import "_technologies";
-@import "_presentation";
-@import "_projet";
-@import "_footer";
+@import "header";
+@import "accueil";
+@import "competences";
+@import "technologies";
+@import "presentation";
+@import "projet";
+@import "footer";
 
 $color_1: #25abe4;
 $background-color_h2: #feed05;
@@ -12,6 +12,7 @@ $background-color_h2: #feed05;
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
