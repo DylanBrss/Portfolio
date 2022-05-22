@@ -10,20 +10,19 @@ $color_github: #000;
 
 #techno {
     .container_techno {
-        display: grid;
-        grid-gap: 10px;
+        display: flex;
+        justify-content: space-evenly;
 
         .container_txt_icon_html {
-            //max-width: 30%;
-            padding-left: 10px;
-            grid-column: 1;
-            grid-row: 1;
-
             .box {
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 background: $background;
+                height: 250px;
+                width: 200px;
                 padding: 30px 30px;
                 border-radius: 10px;
-                //margin-bottom: 20%;
                 box-shadow: $box-shadow_html;
                 border: dashed rgb(228, 76, 37);
 
@@ -47,16 +46,15 @@ $color_github: #000;
 
 
         .container_txt_icon_css {
-            //max-width: 30%;
-            //padding: 0 15px;
-            grid-column: 2;
-            grid-row: 1;
-
             .box {
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 background: $background;
+                height: 250px;
+                width: 500px;
                 padding: 30px 30px;
                 border-radius: 10px;
-                //margin-bottom: 20%;
                 box-shadow: $box-shadow_css;
                 border: dashed rgb(22, 161, 220);
 
@@ -78,16 +76,16 @@ $color_github: #000;
         }
 
         .container_txt_icon_bootstrap {
-            //max-width: 30%;
-            //padding: 0 15px;
-            grid-column: 3;
-            grid-row: 1;
-
             .box {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: $background;
+                height: 250px;
+                width: 200px;
                 background: $background;
                 padding: 30px 30px;
                 border-radius: 10px;
-               // margin-bottom: 20%;
                 box-shadow: $box-shadow_bootstrap;
                 border: dashed rgb(86, 61, 124);
 
@@ -109,16 +107,16 @@ $color_github: #000;
         }
 
         .container_txt_icon_git {
-            //max-width: 30%;
-            //padding-right: 10px;
-            grid-column: 4;
-            grid-row: 1;
-
             .box {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: $background;
+                height: 250px;
+                width: 200px;
                 background: $background;
                 padding: 30px 30px;
                 border-radius: 10px;
-                //margin-bottom: 20%;
                 box-shadow: $box-shadow_github;
                 border: dashed #000;
 
