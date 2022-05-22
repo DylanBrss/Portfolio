@@ -162,6 +162,7 @@ header .menu-btn {
   cursor: pointer;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  background-color: #fff;
 }
 
 header .menu-btn span {
@@ -984,11 +985,11 @@ header .content p {
   text-decoration: underline;
 }
 
-#footer .info #reseaux a {
-  padding-top: 20px;
+#footer .info #reseaux .res0 {
+  padding-top: 10px;
 }
 
-#footer .info #reseaux a svg path {
+#footer .info #reseaux .res0 a svg path {
   fill: #fff;
 }
 
