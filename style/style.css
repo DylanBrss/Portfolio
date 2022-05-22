@@ -22,7 +22,7 @@ header .wrapper {
   right: -100%;
   height: 20%;
   width: 100%;
-  background: #00b4d8;
+  background: #003566;
   -webkit-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
 }
@@ -361,8 +361,8 @@ header .content p {
 
 #accueil #container_accueil .text_right #mini_pres #btn .buttonCV {
   font-family: "Macondo", cursive;
-  border: 1px solid #25abe4;
-  background-color: #00b4d8;
+  border: 1px solid #003566;
+  background-color: #003566;
   color: #fff;
   padding: 20px;
   border-radius: 10px;
@@ -374,7 +374,7 @@ header .content p {
 }
 
 #accueil #container_accueil .text_right #mini_pres #btn .buttonCV:hover {
-  background-color: #026b80;
+  background-color: #00b4d8;
   border: 1px solid #fff;
   -webkit-transform: background 0.5s 0s ease,  transform 0.5s 0s ease;
           transform: background 0.5s 0s ease,  transform 0.5s 0s ease;
@@ -382,8 +382,8 @@ header .content p {
 
 #accueil #container_accueil .text_right #mini_pres #btn .buttonContact {
   font-family: "Macondo", cursive;
-  border: 1px solid #25abe4;
-  background-color: #00b4d8;
+  border: 1px solid #003566;
+  background-color: #003566;
   color: #fff;
   padding: 20px;
   border-radius: 10px;
@@ -395,7 +395,7 @@ header .content p {
 }
 
 #accueil #container_accueil .text_right #mini_pres #btn .buttonContact:hover {
-  background-color: #026b80;
+  background-color: #00b4d8;
   border: 1px solid #fff;
   -webkit-transform: box-shadow 1s 0.5s ease-in,  text-shadow 0.5s 0s linear,  background 0.5s 0s linear;
           transform: box-shadow 1s 0.5s ease-in,  text-shadow 0.5s 0s linear,  background 0.5s 0s linear;
@@ -449,7 +449,7 @@ header .content p {
 }
 
 #competences {
-  background-color: #00b4d8;
+  background-color: #003566;
 }
 
 #competences h2 {
@@ -489,7 +489,7 @@ header .content p {
 
 #competences .compt .comp_txt_icon .rond svg {
   margin: auto;
-  fill: #00b4d8;
+  fill: #003566;
 }
 
 #competences .compt .comp_txt_icon p {
@@ -750,7 +750,7 @@ header .content p {
 }
 
 #presentation .container_pres #img_pres svg {
-  fill: #25abe4;
+  fill: #003566;
 }
 
 @media screen and (max-width: 1024px) {
@@ -987,7 +987,7 @@ body section {
 }
 
 body h2 {
-  color: #25abe4;
+  color: #003566;
   font-size: 250%;
   font-family: "Macondo", cursive;
   text-align: center;

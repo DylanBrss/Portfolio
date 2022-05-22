@@ -1,4 +1,4 @@
-$background-color_btn : #00b4d8;
+$background-color_btn : #003566;
 $color_btn : #fff;
 $font-family_btn: 'Macondo', cursive;
 
@@ -60,7 +60,7 @@ $font-family_btn: 'Macondo', cursive;
 
                     .buttonCV {
                         font-family: $font-family_btn;
-                        border: 1px solid #25abe4;
+                        border: 1px solid #003566;
                         background-color: $background-color_btn;
                         color: $color_btn;
                         padding: 20px;
@@ -69,7 +69,7 @@ $font-family_btn: 'Macondo', cursive;
                         transition: background 2s, transform 2s;
 
                         &:hover {
-                            background-color: #026b80;
+                            background-color: #00b4d8;
                             border: 1px solid #fff;
                             transform: background 0.5s 0s ease, 
                                         transform 0.5s 0s ease;
@@ -78,7 +78,7 @@ $font-family_btn: 'Macondo', cursive;
 
                     .buttonContact {
                         font-family: $font-family_btn;
-                        border: 1px solid #25abe4;
+                        border: 1px solid #003566;
                         background-color: $background-color_btn;
                         color: $color_btn;
                         padding: 20px;
@@ -87,7 +87,7 @@ $font-family_btn: 'Macondo', cursive;
                         transition: box-shadow 2s, background-color 2s, text-shadow 2s;
 
                         &:hover {
-                            background-color: #026b80;
+                            background-color: #00b4d8;
                             border: 1px solid #fff;
                             transform: box-shadow 1s 0.5s ease-in, 
                                         text-shadow 0.5s 0s linear, 
