@@ -1,6 +1,7 @@
 $background-image_1: url(../images/FlexCard.PNG);
 $background-image_2: url(../images/KomeWaza.png);
 $background-image_3: url(../images/Zanzibar.PNG);
+$background-image_4: url(../images/Travel_Blog.PNG);
 $box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
 #projets {
@@ -21,7 +22,7 @@ $box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
                 background-size: cover;
                 background-position: top center;
                 height: 300px;
-                width: 80%;
+                width: 70%;
                 box-shadow: $box-shadow;
                 transition: 500ms linear;
 
@@ -43,7 +44,7 @@ $box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
                 background-size: cover;
                 background-position: top center;
                 height: 300px;
-                width: 80%;
+                width: 70%;
                 box-shadow: $box-shadow;
                 transition: 500ms linear;
 
@@ -65,7 +66,29 @@ $box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
                 background-size: cover;
                 background-position: top center;
                 height: 300px;
-                width: 80%;
+                width: 70%;
+                box-shadow: $box-shadow;
+                transition: 500ms linear;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .container_travel {
+            display: flex;
+            justify-content: flex-start;
+            grid-column: 2;
+            grid-row: 2;
+
+            #img_travel{
+                background-image: $background-image_4;
+                border-radius: 10px;
+                background-size: cover;
+                background-position: top center;
+                height: 300px;
+                width: 70%;
                 box-shadow: $box-shadow;
                 transition: 500ms linear;
 
@@ -106,6 +129,13 @@ $box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
                 justify-content: center;
                 grid-column: 1;
                 grid-row: 3;
+            }
+
+            .container_travel {
+                display: flex;
+                justify-content: center;
+                grid-column: 1;
+                grid-row: 4;
             }
         }
     }

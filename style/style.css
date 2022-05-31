@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Macondo&display=swap");
 header {
   /* Bar */
@@ -832,7 +831,7 @@ header .content p {
   background-size: cover;
   background-position: top center;
   height: 300px;
-  width: 80%;
+  width: 70%;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   -webkit-transition: 500ms linear;
@@ -863,7 +862,7 @@ header .content p {
   background-size: cover;
   background-position: top center;
   height: 300px;
-  width: 80%;
+  width: 70%;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   -webkit-transition: 500ms linear;
@@ -894,7 +893,7 @@ header .content p {
   background-size: cover;
   background-position: top center;
   height: 300px;
-  width: 80%;
+  width: 70%;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   -webkit-transition: 500ms linear;
@@ -902,6 +901,37 @@ header .content p {
 }
 
 #projets .container_portfolio .container_zanzibar #img_zanzibar:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#projets .container_portfolio .container_travel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+#projets .container_portfolio .container_travel #img_travel {
+  background-image: url(../images/Travel_Blog.PNG);
+  border-radius: 10px;
+  background-size: cover;
+  background-position: top center;
+  height: 300px;
+  width: 70%;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  -webkit-transition: 500ms linear;
+  transition: 500ms linear;
+}
+
+#projets .container_portfolio .container_travel #img_travel:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -950,6 +980,18 @@ header .content p {
     grid-column: 1;
     -ms-grid-row: 3;
     grid-row: 3;
+  }
+  #projets .container_portfolio .container_travel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 4;
+    grid-row: 4;
   }
 }
 
@@ -1052,15 +1094,4 @@ body .container {
       -ms-flex-pack: center;
           justify-content: center;
 }
-
-/*
-SASS
-
-créer fichier index.html / style.scss
-cliquer sur watching sass
-link le fichier css apparue
-créer 4 li --> <li*4>
-
-
-*/
 /*# sourceMappingURL=style.css.map */
