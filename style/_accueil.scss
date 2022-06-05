@@ -15,17 +15,15 @@ $font-family_btn: 'Macondo', cursive;
         justify-content: space-around;
 
         .img_left {
-            margin-top: 5%;
+            //margin-top: 5%;
 
             #pres_img {
-                padding: 50px;
                 margin: auto;
 
                 img {
-                    height: 200px;
+                    height: 400px;
                     width: auto;
                     //border: 1px solid rgb(14, 146, 223);
-                    border-radius: 100px;
                 }
             }
         }

@@ -301,19 +301,13 @@ header .content p {
       justify-content: space-around;
 }
 
-#accueil #container_accueil .img_left {
-  margin-top: 5%;
-}
-
 #accueil #container_accueil .img_left #pres_img {
-  padding: 50px;
   margin: auto;
 }
 
 #accueil #container_accueil .img_left #pres_img img {
-  height: 200px;
+  height: 400px;
   width: auto;
-  border-radius: 100px;
 }
 
 #accueil #container_accueil .text_right {
@@ -726,84 +720,116 @@ header .content p {
   }
 }
 
-#presentation {
-  margin-left: 100px;
-  margin-right: 100px;
+/*
+ .technologies{
+            .container{
+                width: 90%;
+                max-width: 120rem;
+                height: 100%;
+                margin: 0 auto;
+                position: relative;
+
+                .techno-heading{
+                    text-align: center;
+                    margin-top: 10rem;
+
+                    h6{
+                        font-size: 1.6rem;
+                        font-weight: 300;
+                    }
+                }
+                .my-skills{
+                    margin-top: 10rem;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+                    grid-gap: 2.5rem;
+                    text-align: center;
+
+                    .skill{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 2rem;
+
+                        h1{
+                            text-transform: uppercase;
+                            letter-spacing: 2px;
+                            margin: 2rem -2px 2rem 0;
+                        }
+
+                        .icon-container{
+                            width: 10rem;
+                            height: 10rem;
+                            border: 3px solid #ffe838;
+                            background-color: #fd57bf;
+                            margin-bottom: 2rem;
+                            display: flex;
+                            transform: rotate(45deg);
+
+                            i{
+                                color: #ffe838;
+                                font-size: 5rem;
+                                margin: auto;
+                                transform: rotate(-45deg);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+*/
+.container {
+  padding: 0 100px 0 100px;
 }
 
-#presentation .container_pres {
-  height: 300px;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-#presentation .container_pres #pres {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#presentation .container_pres #pres p {
-  font-size: 20px;
-  text-align: center;
+.container .presentation {
+  height: 100vh;
   margin-top: 100px;
-  font-style: italic;
+  height: 100vh;
+  margin-top: 100px;
 }
 
-#presentation .container_pres #pres p span {
-  font-weight: bold;
+.container .presentation h1 {
+  color: #003566;
+  font-size: 10rem;
+  z-index: 0;
+  opacity: 0.1;
 }
 
-#presentation .container_pres #img_pres {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+.container .presentation .presentation-perso {
+  max-width: 900px;
+  background-color: #003566;
+  -webkit-box-shadow: 0 0 1.2rem black;
+          box-shadow: 0 0 1.2rem black;
+  padding: 50px;
+  position: relative;
+  top: -70px;
+  left: 50%;
+  right: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 1;
 }
 
-#presentation .container_pres #img_pres svg {
-  fill: #003566;
+.container .presentation .presentation-perso p {
+  font-size: 1.3rem;
+  color: #BEBEBE;
 }
 
-@media screen and (max-width: 1024px) {
-  #presentation .container_pres {
-    padding-top: 100px;
-    height: 300px;
-    margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 20px;
-  }
-  #presentation .container_pres #pres {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-  #presentation .container_pres #img_pres {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
+.container .presentation .presentation-perso p:nth-child(2) {
+  margin-top: 30px;
+}
+
+.container .presentation .presentation-perso p:last-child {
+  margin-top: 30px;
+}
+
+.container .presentation img {
+  width: 300px;
+  position: relative;
+  top: -300px;
+  left: 1250px;
 }
 
 #projets .container_portfolio {
@@ -1059,16 +1085,33 @@ body h2 {
   letter-spacing: -1px;
   font-weight: 300;
   word-spacing: 8px;
+  position: relative;
 }
 
-body h2:after {
-  display: block;
-  height: 2px;
-  background-color: #feed05;
-  width: 100px;
+body h2::before {
   content: " ";
-  margin: 0 auto;
-  margin-top: 10px;
+  position: absolute;
+  bottom: -.5rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: yellow;
+  width: 10rem;
+  height: 3px;
+  border-radius: 0.8rem;
+}
+
+body h2::after {
+  content: " ";
+  position: absolute;
+  bottom: -0.9rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: yellow;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
 }
 
 body h4 {
