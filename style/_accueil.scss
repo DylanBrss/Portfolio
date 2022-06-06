@@ -8,14 +8,12 @@ $font-family_btn: 'Macondo', cursive;
     padding-bottom: 150px;
 
     #container_accueil {
-        //  border: 1px solid #000;
         border-radius: 10px;
         height: 300px;
         display: flex;
         justify-content: space-around;
 
         .img_left {
-            //margin-top: 5%;
 
             #pres_img {
                 margin: auto;
@@ -23,7 +21,6 @@ $font-family_btn: 'Macondo', cursive;
                 img {
                     height: 400px;
                     width: auto;
-                    //border: 1px solid rgb(14, 146, 223);
                 }
             }
         }
@@ -47,7 +44,7 @@ $font-family_btn: 'Macondo', cursive;
                     flex-wrap: wrap;
 
                     h1 {
-                        font-size: 170%;
+                        font-size: 40px;
                     }
                 }
 

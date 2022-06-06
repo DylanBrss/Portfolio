@@ -1,60 +1,6 @@
-// $background-color_btn : #25abe4;
-// $color_btn : #fff;
-
-// #presentation {
-//     background-color: #003566;
-//     color: #fff;
-
-//     h2 {
-//         color: #fff;
-//     }
-
-//     .container_pres {
-//         height: 300px;
-//         margin: auto;
-//         display: flex;
-//         justify-content: space-around;
-
-//         #pres {
-//             display: flex;
-
-//             p {
-//                 font-size: 20px;
-//                 text-align: center;
-//                 margin-top: 100px;
-//                 font-style: italic;
-
-//                 span {
-//                     font-weight: bold;
-//                 }
-//             }
-//         }
-//     }
-// }
-
-// @media screen and (max-width: 1024px) {
-//     #presentation {
-//         .container_pres {
-//             padding-top: 100px;
-//             height: 300px;
-//             margin: auto;
-//             display: flex;
-//             flex-direction: column;
-//             align-items: center;
-//             gap: 20px;
-
-//             #pres {
-//                 display: flex;
-//                 justify-content: flex-end;
-//             }
-
-//             #img_pres {
-//                 display: flex;
-//                 justify-content: center;
-//             }
-//         }
-//     }
-// }
+$background-color : #003566;
+$color_white : #fff;
+$color_1 : #BEBEBE;
 
 .container {
     padding: 0 100px 0 100px;
@@ -64,7 +10,7 @@
         margin-top: 100px;
 
         h1 {
-            color: #003566;
+            color: $color_white;
             font-size: 10rem;
             z-index: 0;
             opacity: 0.1;
@@ -75,7 +21,7 @@
 
         .presentation-perso {
             max-width: 900px;
-            background-color: #003566;
+            background-color: $background-color;
             box-shadow: 0 0 1.2rem rgb(0, 0, 0, );
             padding: 50px;
             position: relative;
@@ -87,7 +33,7 @@
 
             p {
                 font-size: 1.3rem;
-                color: #BEBEBE;
+                color: $color_1;
 
                 &:nth-child(2) {
                     margin-top: 30px;
