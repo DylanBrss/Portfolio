@@ -19,7 +19,7 @@ $font-family_btn: 'Macondo', cursive;
                 margin: auto;
 
                 img {
-                    height: 400px;
+                    height: 500px;
                     width: auto;
                 }
             }
@@ -31,10 +31,7 @@ $font-family_btn: 'Macondo', cursive;
             margin-top: 5%;
 
             #mini_pres {
-                // padding: 30px;
-                // margin-left: 200px;
                 text-align: right;
-                //border: 1px solid rgb(210, 57, 57);
                 border-radius: 10px;
                 margin: auto;
 
@@ -45,6 +42,7 @@ $font-family_btn: 'Macondo', cursive;
 
                     h1 {
                         font-size: 40px;
+                        opacity: 0.5;
                     }
                 }
 
@@ -55,7 +53,7 @@ $font-family_btn: 'Macondo', cursive;
 
                     .buttonCV {
                         font-family: $font-family_btn;
-                        border: 1px solid #003566;
+                        border: 1px solid #E45665ff;
                         background-color: $background-color_btn;
                         color: $color_btn;
                         padding: 20px;
@@ -65,7 +63,7 @@ $font-family_btn: 'Macondo', cursive;
 
                         &:hover {
                             background-color: #00b4d8;
-                            border: 1px solid #fff;
+                            border: 1px solid #E45665ff;
                             transform: background 0.5s 0s ease, 
                                         transform 0.5s 0s ease;
                         }
@@ -73,7 +71,7 @@ $font-family_btn: 'Macondo', cursive;
 
                     .buttonContact {
                         font-family: $font-family_btn;
-                        border: 1px solid #003566;
+                        border: 1px solid #E45665ff;
                         background-color: $background-color_btn;
                         color: $color_btn;
                         padding: 20px;
@@ -83,7 +81,7 @@ $font-family_btn: 'Macondo', cursive;
 
                         &:hover {
                             background-color: #00b4d8;
-                            border: 1px solid #fff;
+                            border: 1px solid #E45665ff;
                             transform: box-shadow 1s 0.5s ease-in, 
                                         text-shadow 0.5s 0s linear, 
                                         background 0.5s 0s linear;

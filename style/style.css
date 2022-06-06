@@ -307,7 +307,7 @@ header .content p {
 }
 
 #accueil #container_accueil .img_left #pres_img img {
-  height: 400px;
+  height: 500px;
   width: auto;
 }
 
@@ -340,6 +340,7 @@ header .content p {
 
 #accueil #container_accueil .text_right #mini_pres #pres_txt h1 {
   font-size: 40px;
+  opacity: 0.5;
 }
 
 #accueil #container_accueil .text_right #mini_pres #btn {
@@ -354,7 +355,7 @@ header .content p {
 
 #accueil #container_accueil .text_right #mini_pres #btn .buttonCV {
   font-family: "Macondo", cursive;
-  border: 1px solid #003566;
+  border: 1px solid #E45665ff;
   background-color: #003566;
   color: #fff;
   padding: 20px;
@@ -368,14 +369,14 @@ header .content p {
 
 #accueil #container_accueil .text_right #mini_pres #btn .buttonCV:hover {
   background-color: #00b4d8;
-  border: 1px solid #fff;
+  border: 1px solid #E45665ff;
   -webkit-transform: background 0.5s 0s ease,  transform 0.5s 0s ease;
           transform: background 0.5s 0s ease,  transform 0.5s 0s ease;
 }
 
 #accueil #container_accueil .text_right #mini_pres #btn .buttonContact {
   font-family: "Macondo", cursive;
-  border: 1px solid #003566;
+  border: 1px solid #E45665ff;
   background-color: #003566;
   color: #fff;
   padding: 20px;
@@ -389,7 +390,7 @@ header .content p {
 
 #accueil #container_accueil .text_right #mini_pres #btn .buttonContact:hover {
   background-color: #00b4d8;
-  border: 1px solid #fff;
+  border: 1px solid #E45665ff;
   -webkit-transform: box-shadow 1s 0.5s ease-in,  text-shadow 0.5s 0s linear,  background 0.5s 0s linear;
           transform: box-shadow 1s 0.5s ease-in,  text-shadow 0.5s 0s linear,  background 0.5s 0s linear;
 }
@@ -447,7 +448,7 @@ header .content p {
 }
 
 #competences .my-skills {
-  margin-top: 5rem;
+  margin-top: 10rem;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -495,6 +496,11 @@ header .content p {
   display: flex;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+}
+
+#competences .my-skills .skill .svg-container:hover {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
 }
 
 #competences .my-skills .skill .svg-container svg {
@@ -789,25 +795,25 @@ header .content p {
   }
 }
 
-.container {
+#presentation {
+  height: 100vh;
+  margin-top: 100px;
+}
+
+#presentation .container {
   padding: 0 100px 0 100px;
-}
-
-.container .presentation {
-  height: 100vh;
-  margin-top: 100px;
   height: 100vh;
   margin-top: 100px;
 }
 
-.container .presentation h1 {
+#presentation .container h1 {
   color: #fff;
   font-size: 10rem;
   z-index: 0;
   opacity: 0.1;
 }
 
-.container .presentation .presentation-perso {
+#presentation .container .presentation-perso {
   max-width: 900px;
   background-color: #003566;
   -webkit-box-shadow: 0 0 1.2rem black;
@@ -822,20 +828,20 @@ header .content p {
   z-index: 1;
 }
 
-.container .presentation .presentation-perso p {
+#presentation .container .presentation-perso p {
   font-size: 1.3rem;
   color: #BEBEBE;
 }
 
-.container .presentation .presentation-perso p:nth-child(2) {
+#presentation .container .presentation-perso p:nth-child(2) {
   margin-top: 30px;
 }
 
-.container .presentation .presentation-perso p:last-child {
+#presentation .container .presentation-perso p:last-child {
   margin-top: 30px;
 }
 
-.container .presentation img {
+#presentation .container img {
   width: 300px;
   position: relative;
   top: -300px;
@@ -1189,43 +1195,128 @@ header .content p {
   }
 }
 
-#footer {
+footer .container {
+  padding: 0 100px 0 100px;
+}
+
+footer .container #contact {
+  height: 100vh;
+  margin-top: 100px;
+  height: 100vh;
+  margin-top: 100px;
+}
+
+footer .container #contact h1 {
+  color: #fff;
+  font-size: 10rem;
+  z-index: 0;
+  opacity: 0.1;
+}
+
+footer .container #contact .contact-perso {
+  max-width: 900px;
+  margin-top: 100px;
+  background-color: #003566;
+  -webkit-box-shadow: 0 0 1.2rem black;
+          box-shadow: 0 0 1.2rem black;
+  padding: 50px;
+  position: relative;
+  top: -70px;
+  left: 50%;
+  right: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+footer .container #contact .contact-perso #contact_perso {
+  font-size: 1.3rem;
+  color: #BEBEBE;
+  text-align: center;
+}
+
+footer .container #contact .contact-perso #contact_perso:nth-child(2) {
+  margin-top: 30px;
+}
+
+footer .container #contact .contact-perso #contact_perso:last-child {
+  margin-top: 30px;
+}
+
+footer .container #contact .contact-perso #contact_perso a {
+  text-decoration: none;
+}
+
+footer .container #contact .contact-perso #contact_perso a svg {
+  fill: #fff;
+}
+
+footer .container #contact .contact-perso h3 {
+  color: #fff;
+  text-align: center;
+  margin: 50px 0;
+  font-size: 40px;
+}
+
+footer .container #contact .contact-perso #reseaux {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+footer .container #contact .contact-perso #reseaux .linkedin {
+  margin-right: 50px;
+}
+
+footer .container #contact .contact-perso #reseaux .linkedin svg {
+  fill: #fff;
+}
+
+footer .container #contact .contact-perso #reseaux .linkedin svg:hover {
+  background-color: #fff;
+  fill: #003566;
+}
+
+footer .container #contact .contact-perso #reseaux .github {
+  margin-left: 50px;
+}
+
+footer .container #contact .contact-perso #reseaux .github svg {
+  fill: #fff;
+}
+
+footer .container #contact .contact-perso #reseaux .github svg:hover {
+  background-color: #fff;
+  fill: #003566;
+}
+
+footer .container #contact .contact-perso h4 {
   color: #fff;
 }
 
-#footer .info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-#footer .info #contact h3 {
-  font-size: 40px;
-  text-decoration: underline;
-}
-
-#footer .info #contact p {
-  padding-top: 20px;
-}
-
-#footer .info #contact p a svg path {
-  fill: #fff;
-}
-
-#footer .info #reseaux h3 {
-  font-size: 40px;
-  text-decoration: underline;
-}
-
-#footer .info #reseaux .res0 {
-  padding-top: 10px;
-}
-
-#footer .info #reseaux .res0 a svg path {
-  fill: #fff;
+@media screen and (max-width: 1200px) {
+  footer .container {
+    padding: 0 100px 0 100px;
+  }
+  footer .container #contact {
+    height: 100vh;
+    margin-top: 100px;
+  }
+  footer .container #contact h1 {
+    color: #fff;
+    font-size: 10rem;
+    z-index: 0;
+    opacity: 0.1;
+  }
+  footer .container #contact .contact-perso {
+    max-width: 900px;
+    margin-top: 100px;
+    background-color: #003566;
+    -webkit-box-shadow: 0 0 1.2rem black;
+            box-shadow: 0 0 1.2rem black;
+    padding: 50px;
+    position: relative;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }
 
 * {

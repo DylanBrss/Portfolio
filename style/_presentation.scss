@@ -2,12 +2,12 @@ $background-color : #003566;
 $color_white : #fff;
 $color_1 : #BEBEBE;
 
-.container {
-    padding: 0 100px 0 100px;
+#presentation {
+    height: 100vh;
+    margin-top: 100px;
 
-    .presentation {
-        height: 100vh;
-        margin-top: 100px;
+    .container {
+        padding: 0 100px 0 100px;
 
         h1 {
             color: $color_white;
