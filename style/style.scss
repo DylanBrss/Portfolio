@@ -13,21 +13,26 @@ $font-family_h2: 'Macondo', cursive;
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Quicksand', sans-serif;
-    background-image: url(../images/sitebg.jpg);
+    background-image: #fff;
 
     section {
         padding: 30px 0 60px 0;
     }
 
     h1 {
-        color: #fff;
-        font-size: 10rem;
-        z-index: 0;
-        opacity: 0.1;
+        font-size: 3rem;
+        text-transform: uppercase;
+        color: black;
+        text-align: center;
+
+        span {
+            color: red;
+        }
     }
 
     h4 {
@@ -47,26 +52,5 @@ body {
         height: 40%;
         margin: 0 auto;
         position: relative;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    body{
-        section{
-            h1{
-                text-align: center;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    body{
-        section{
-            h1{
-                text-align: center;
-                font-size: 6rem;
-            }
-        }
     }
 }

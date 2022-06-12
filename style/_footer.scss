@@ -10,16 +10,6 @@ footer {
             height: 100vh;
             margin-top: 100px;
 
-            h1 {
-                color: $color_white;
-                font-size: 10rem;
-                z-index: 0;
-                opacity: 0.1;
-            }
-
-            height: 100vh;
-            margin-top: 100px;
-
             .contact-perso {
                 max-width: 900px;
                 margin-top: 100px;
@@ -64,24 +54,27 @@ footer {
                 #reseaux {
                     font-size: 1.3rem;
                     text-align: center;
+
                     .linkedin {
                         margin-right: 50px;
+
                         svg {
                             fill: #fff;
 
-                            &:hover{
+                            &:hover {
                                 background-color: #fff;
                                 fill: #003566;
                             }
-                        }                        
+                        }
                     }
 
                     .github {
                         margin-left: 50px;
+
                         svg {
                             fill: #fff;
 
-                            &:hover{
+                            &:hover {
                                 background-color: #fff;
                                 fill: #003566;
                             }
@@ -95,24 +88,61 @@ footer {
             }
         }
     }
+
+    #scrollUp {
+        #button {
+            display: inline-block;
+            background-color: #003566;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            border-radius: 4px;
+            margin: 30px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            border-radius: 100px;
+            transition: background-color .3s;
+            z-index: 1000;
+            opacity: 0.3;
+
+            &:hover {
+                cursor: pointer;
+                background-color: #FF2416;
+                opacity: 1;
+            }
+
+            &:active {
+                background-color: #FF2416;
+            }
+
+            &::after {
+                content: "\f077";
+                font-family: FontAwesome;
+                font-weight: normal;
+                font-style: normal;
+                font-size: 2em;
+                line-height: 50px;
+                color: #fff;
+            }
+
+            .show {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 1200px) {
     footer {
         .container {
             padding: 0 100px 0 100px;
-    
+
             #contact {
                 height: 100vh;
                 margin-top: 100px;
-                
-                h1 {
-                    color: $color_white;
-                    font-size: 10rem;
-                    z-index: 0;
-                    opacity: 0.1;
-                }
-    
+
                 .contact-perso {
                     max-width: 900px;
                     margin-top: 100px;
@@ -121,6 +151,37 @@ footer {
                     padding: 50px;
                     position: relative;
                     transform: translateX(-50%);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        .container {
+            padding: 0 100px 0 100px;
+
+            #contact {
+                height: 100vh;
+                margin-top: 100px;
+
+                .contact-perso {
+                    max-width: 900px;
+
+                    #contact_perso {
+                        font-size: 1.3rem;
+                        color: $color_1;
+                        text-align: center;
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+                    #reseaux {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                    }
                 }
             }
         }

@@ -3,24 +3,15 @@ $color_white : #fff;
 $color_1 : #BEBEBE;
 
 #presentation {
-    height: 100vh;
-    margin-top: 100px;
-
     .container {
         padding: 0 100px 0 100px;
-
-        h1 {
-            color: $color_white;
-            font-size: 10rem;
-            z-index: 0;
-            opacity: 0.1;
-        }
-
         height: 100vh;
         margin-top: 100px;
 
-        .presentation-perso {
+        #presentation-perso {
+            display: flex;
             max-width: 900px;
+            margin-top: 100px;
             background-color: $background-color;
             box-shadow: 0 0 1.2rem rgb(0, 0, 0, );
             padding: 50px;
@@ -29,28 +20,39 @@ $color_1 : #BEBEBE;
             left: 50%;
             right: 50%;
             transform: translateX(-50%);
-            z-index: 1;
 
-            p {
-                font-size: 1.3rem;
-                color: $color_1;
+            p{
+                color: #fff;
+                font-size: 20px;
+            }
 
-                &:nth-child(2) {
-                    margin-top: 30px;
-                }
-
-                &:last-child {
-                    margin-top: 30px;
-                }
+            img{
+                margin-top: -110px;
             }
         }
+    }
+}
 
-        img {
-            width: 300px;
-            position: relative;
-            top: -300px;
-            left: 1250px;
-
+@media screen and (max-width: 991px) {
+    #presentation {
+        .container {
+            padding: 0 100px 0 100px;
+            height: 50vh;
+            margin-top: 100px;
+    
+            #presentation-perso {
+                display: flex;
+                flex-direction: column;
+    
+                p{
+                    color: #fff;
+                    font-size: 20px;
+                }
+    
+                img{
+                    margin-top: 5px;
+                }
+            }
         }
     }
 }

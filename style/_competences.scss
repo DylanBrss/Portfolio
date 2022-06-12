@@ -2,52 +2,52 @@ $background-color_back : #003566;
 $color_p: #fff;
 
 #competences {
-    height: 100vh;
+    height: 120vh;
     margin-top: 100px;
+    margin-bottom: 100px;
 
     .my-skills {
         margin-top: 10rem;
-        text-align: center;
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 30px 0px;
+
 
         .skill {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 2rem;
-
-            h3 {
-                color: #fff;
-                text-transform: uppercase;
-                letter-spacing: 2px;
-                margin: 2rem -2px 2rem 0;
-            }
+            padding: 1rem;
 
             .svg-container {
-                width: 10rem;
-                height: 10rem;
-                border: 3px solid #E45665ff;
+                width: 300px;
+                height: 300px;
+                border: 3px solid #FF2416;
                 background-color: #003570;
-                margin-bottom: 3rem;
-                display: flex;
-                transform: rotate(45deg);
+                border-radius: 10px;
+                margin-bottom: 1rem;
 
-                &:hover{
-                    transform: rotate(0deg);
+                img {
+                    height: 100px;
+                    margin-top: 10px;
+                    margin-left: 10px;
+                    overflow: hidden;
+                    position: relative;
                 }
 
-                svg {
-                    fill: #fff;
-                    font-size: 5rem;
-                    margin: auto;
-                    transform: rotate(-45deg);
+                h2 {
+                    font-size: 1rem;
+                    color: white;
+                    margin-bottom: 10px;
+                    margin-top: 20px;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
 
-                    // &:hover{
-                    //     transform: rotate(0deg);
-                    // }
+                p {
+                    color: white;
+                    text-align: center;
                 }
             }
         }
@@ -56,10 +56,16 @@ $color_p: #fff;
 
 @media screen and (max-width: 1200px) {
     #competences {
+        height: 120vh;
+        margin-top: 100px;
+
         .my-skills {
             margin-top: 10rem;
             display: flex;
-            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 30px 0px;
+
 
             .skill {
                 display: flex;
@@ -68,28 +74,40 @@ $color_p: #fff;
                 align-items: center;
                 padding: 1rem;
 
-                h3 {
-                    color: #fff;
-                    text-transform: uppercase;
-                    letter-spacing: 2px;
-                    margin: 2rem -2px 2rem 0;
+                .svg-container {
+                    width: 300px;
+                    height: 300px;
+                    margin-bottom: 3rem;
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #competences {
+        height: 180vh;
+        margin-top: 100px;
+        margin-bottom: 100px;
+
+        .my-skills {
+            margin-top: 10rem;
+            display: flex;
+            flex-direction: column;
+            margin: 30px 0px;
+
+
+            .skill {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 1rem;
 
                 .svg-container {
-                    width: 10rem;
-                    height: 10rem;
-                    border: 3px solid #E45665ff;
-                    background-color: #003570;
+                    width: 300px;
+                    height: 300px;
                     margin-bottom: 3rem;
-                    display: flex;
-                    transform: rotate(45deg);
-
-                    svg {
-                        fill: #fff;
-                        font-size: 5rem;
-                        margin: auto;
-                        transform: rotate(-45deg);
-                    }
                 }
             }
         }

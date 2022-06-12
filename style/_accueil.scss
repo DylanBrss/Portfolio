@@ -1,97 +1,106 @@
-$background-color_btn : #003566;
-$color_btn : #fff;
 $font-family_btn: 'Macondo', cursive;
 
 #accueil {
-    margin-left: 100px;
-    margin-right: 100px;
-    padding-bottom: 150px;
+    background-color: #003566;
 
-    #container_accueil {
-        border-radius: 10px;
-        height: 300px;
-        display: flex;
-        justify-content: space-around;
+    .accueil {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 50px;
+        justify-content: flex-start;
 
-        .img_left {
+        h1 {
+            display: block;
+            width: fit-content;
+            font-size: 4rem;
+            position: relative;
+            animation: text_reveal 0.5s ease forwards;
+            animation-delay: 1s;
+            color: transparent;
 
-            #pres_img {
-                margin: auto;
+            &:nth-child(1) {
+                animation-delay: 1s;
 
-                img {
-                    height: 500px;
-                    width: auto;
+                span {
+                    animation-delay: 0.5s;
                 }
+            }
+
+            &:nth-child(2) {
+                animation-delay: 2s;
+
+                span {
+                    animation-delay: 1.5s;
+                }
+            }
+
+            &:nth-child(3) {
+                animation: text_reveal_name 0.5s ease forwards;
+                animation-delay: 3s;
+
+                span {
+                    animation-delay: 2.5s;
+                }
+            }
+
+            span {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 0;
+                background-color: #FF2416;
+                animation: text_reveal_box 1s ease;
+                animation-delay: 0.5s;
             }
         }
 
-        .text_right {
-            display: flex;
-            justify-content: flex-end;
-            margin-top: 5%;
+        .cta {
+			display: inline-block;
+			padding: 10px 30px;
+			margin-right: 10px;
+			color: #fff;
+			background-color: transparent;
+			border: 2px solid crimson;
+			font-size: 2rem;
+			text-transform: uppercase;
+            text-decoration: none;
+			letter-spacing: 0.1rem;
+			margin-top: 30px;
+			transition: 0.3s ease;
+			transition-property: background-color, color;
 
-            #mini_pres {
-                text-align: right;
-                border-radius: 10px;
-                margin: auto;
-
-                #pres_txt {
-                    display: flex;
-                    justify-content: flex-end;
-                    flex-wrap: wrap;
-
-                    h1 {
-                        font-size: 40px;
-                        opacity: 0.5;
-                    }
-                }
-
-                #btn {
-                    display: flex;
-                    justify-content: space-evenly;
-                    padding: 30px;
-
-                    .buttonCV {
-                        font-family: $font-family_btn;
-                        border: 1px solid #E45665ff;
-                        background-color: $background-color_btn;
-                        color: $color_btn;
-                        padding: 20px;
-                        border-radius: 10px;
-                        text-decoration: none;
-                        transition: background 2s, transform 2s;
-
-                        &:hover {
-                            background-color: #00b4d8;
-                            border: 1px solid #E45665ff;
-                            transform: background 0.5s 0s ease, 
-                                        transform 0.5s 0s ease;
-                        }
-                    }
-
-                    .buttonContact {
-                        font-family: $font-family_btn;
-                        border: 1px solid #E45665ff;
-                        background-color: $background-color_btn;
-                        color: $color_btn;
-                        padding: 20px;
-                        border-radius: 10px;
-                        text-decoration: none;
-                        transition: box-shadow 2s, background-color 2s, text-shadow 2s;
-
-                        &:hover {
-                            background-color: #00b4d8;
-                            border: 1px solid #E45665ff;
-                            transform: box-shadow 1s 0.5s ease-in, 
-                                        text-shadow 0.5s 0s linear, 
-                                        background 0.5s 0s linear;
-                        }
-                    }
-                }
-
-            }
-        }
+			&:hover {
+				color: #fff;
+				background-color: #FF2416;
+			}
+		}
     }
+}
+
+@keyframes text_reveal_box {
+	50% {
+		width: 100%;
+		left: 0;
+	}
+
+	100% {
+		width: 0;
+		left: 100%;
+	}
+}
+
+@keyframes text_reveal {
+	100% {
+		color: white;
+	}
+}
+
+@keyframes text_reveal_name {
+	100% {
+		color: crimson;
+		font-weight: 500;
+	}
 }
 
 @media screen and (max-width: 1200px) {

@@ -9,6 +9,9 @@
     <!-- Icon -->
     <script src="https://kit.fontawesome.com/be15b3b70f.js" crossorigin="anonymous"></script>
 
+    <!-- JQuery -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,141 +26,121 @@
 
     <!-- Header -->
     <header>
-        <input type="checkbox" id="active">
-        <label for="active" class="menu-btn"><span></span></label>
-        <label for="active" class="close"></label>
-        <div class="wrapper">
-            <div id="header_txt">
-                <h3 id="titleNB">BRISSEAU Dylan</h3>
+        <div class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header">
+                <div class="nav-title">
+                    <h3><span>B</span>risseau <span>D</span>ylan</h3>
+                </div>
             </div>
-            <ul>
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#competences">Compétences</a></li>
-                <li><a href="#techno">Technologies</a></li>
-                <li><a href="#presentation">Présentation</a></li>
-                <li><a href="#projets">Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <div class="nav-btn">
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+
+            <div class="nav-links">
+                <a href="#accueil" class="nav-link">Accueil</a>
+                <a href="#presentation" class="nav-link">Présentation</a>
+                <a href="#competences" class="nav-link">Compétences</a>
+                <a href="#techno" class="nav-link">Technologies</a>
+                <a href="#projets" class="nav-link">Projets</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
         </div>
     </header>
 
     <!-- Accueil -->
     <section id="accueil">
-        <div id="container_accueil">
-            <div class="img_left">
-
-                <div id="pres_img">
-                    <img src="./images/Avatar.png" alt="face">
-                </div>
-            </div>
-
-            <div class="text_right">
-                <div id="mini_pres">
-                    <div id="pres_txt">
-                        <h1>Bonjour, je m’appel BRISSEAU Dylan<br>
-                            Je suis un développeur Web / Web Mobile
-                        </h1>
-                    </div>
-                    <div id="btn">
-                        <a href="./images/CV.png" class="buttonCV" target="_blank">Voir mon CV</a>
-                        <a href="#contact" class="buttonContact">Contactez-moi</a>
-                    </div>
-                </div>
+        <div class="accueil">
+            <div>
+                <h1>Hello, <span></span></h1>
+                <h1>Je m'appelle <span></span></h1>
+                <h1>Dylan <span></span></h1>
+                <a href="#contact" type="button" class="cta">Contactez-moi</a>
+                <a href="./images/CV.pdf" target="_blank" type="button" class="cta">Mon CV</a>
             </div>
         </div>
     </section>
 
     <!-- Présentation-->
     <section id="presentation">
-        <div  class="container">
-            <h1>Présentation</h1>
-            <div class="presentation-perso">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum deleniti adipisci dolore consectetur
-                    vel! Officia
-                    fuga, odio soluta temporibus commodi repellendus dicta quaerat. Doloremque magni aliquam nisi
-                    eligendi quos
-                    placeat?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum deleniti adipisci dolore consectetur
-                    vel! Officia
-                    fuga, odio soluta temporibus commodi repellendus dicta quaerat. Doloremque magni aliquam nisi
-                    eligendi quos
-                    placeat?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum deleniti adipisci dolore consectetur
-                    vel! Officia
-                    fuga, odio soluta temporibus commodi repellendus dicta quaerat. Doloremque magni aliquam nisi
-                    eligendi quos
-                    placeat?</p>
+        <div class="container">
+            <h1>Prése<span>nt</span>ation</h1>
+            <div id="presentation-perso">
+                <p>
+                    Bonjour, je m'appelle Dylan, j'ai 22ans je suis dîplomé d'un BTS SIO.
+                    Je suis actuellement en formation de Développeur Front-End.
+                </p>
+                <img src="./images/Avatar.png">
             </div>
-            <img src="./images/dotted-shape.png" alt="">
         </div>
     </section>
 
     <!-- Compétences -->
     <section id="competences">
         <div class="container">
-            <h1>Compétences</h1>
+            <h1>Compé<span>t</span>ences</h1>
             <div class="my-skills">
                 <div class="skill">
                     <div class="svg-container">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor"
-                            class="bi bi-code-slash" viewBox="0 0 16 16">
-                            <path
-                                d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z" />
-                        </svg>
+                        <img src="./images/wordpress.svg" />
+                        <h2>Wordpress</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni
+                            voluptatem sed
+                            architecto placeat beatae tenetur officia quod</p>
+
                     </div>
-                    <h3>Développeur web & web mobile</h3>
+
                 </div>
 
                 <div class="skill">
                     <div class="svg-container">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor"
-                            class="bi bi-people-fill" viewBox="0 0 16 16">
-                            <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-                            <path fill-rule="evenodd"
-                                d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z" />
-                            <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
-                        </svg>
+                        <img src="./images/devweb.svg" />
+                        <h2>Développeur web & web mobile</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni
+                            voluptatem sed
+                            architecto placeat beatae tenetur officia quod
+                        </p>
                     </div>
-                    <h3>Travail d'équipe</h3>
                 </div>
 
                 <div class="skill">
                     <div class="svg-container">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor"
-                            class="bi bi-wordpress" viewBox="0 0 16 16">
-                            <path
-                                d="M12.633 7.653c0-.848-.305-1.435-.566-1.892l-.08-.13c-.317-.51-.594-.958-.594-1.48 0-.63.478-1.218 1.152-1.218.02 0 .039.002.058.003l.031.003A6.838 6.838 0 0 0 8 1.137 6.855 6.855 0 0 0 2.266 4.23c.16.005.313.009.442.009.717 0 1.828-.087 1.828-.087.37-.022.414.521.044.565 0 0-.371.044-.785.065l2.5 7.434 1.5-4.506-1.07-2.929c-.369-.022-.719-.065-.719-.065-.37-.022-.326-.588.043-.566 0 0 1.134.087 1.808.087.718 0 1.83-.087 1.83-.087.37-.022.413.522.043.566 0 0-.372.043-.785.065l2.48 7.377.684-2.287.054-.173c.27-.86.469-1.495.469-2.046zM1.137 8a6.864 6.864 0 0 0 3.868 6.176L1.73 5.206A6.837 6.837 0 0 0 1.137 8z" />
-                            <path
-                                d="M6.061 14.583 8.121 8.6l2.109 5.78c.014.033.03.064.049.094a6.854 6.854 0 0 1-4.218.109zm7.96-9.876c.03.219.047.453.047.706 0 .696-.13 1.479-.522 2.458l-2.096 6.06a6.86 6.86 0 0 0 2.572-9.224z" />
-                            <path fill-rule="evenodd"
-                                d="M0 8c0-4.411 3.589-8 8-8 4.41 0 8 3.589 8 8s-3.59 8-8 8c-4.411 0-8-3.589-8-8zm.367 0c0 4.209 3.424 7.633 7.633 7.633 4.208 0 7.632-3.424 7.632-7.633C15.632 3.79 12.208.367 8 .367 3.79.367.367 3.79.367 8z" />
-                        </svg>
+                        <img src="./images/responsive.svg" />
+                        <h2>Site responsive</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni
+                            voluptatem sed
+                            architecto placeat beatae tenetur officia quod
+                        </p>
                     </div>
-                    <h3>Wordpress</h3>
                 </div>
 
                 <div class="skill">
                     <div class="svg-container">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-tablet" viewBox="0 0 16 16">
-                            <path d="M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
-                            <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-                          </svg>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
-                            <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
-                            <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-                          </svg>
+                        <div class="icon">
+                            <img src="./images/wireframe.svg" alt="wireframe" />
+                        </div>
+                        <h2>Maquettage</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni
+                            voluptatem sed
+                            architecto placeat beatae tenetur officia quod
+                        </p>
                     </div>
-                    <h3>Site responsive</h3>
                 </div>
 
                 <div class="skill">
                     <div class="svg-container">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-window" viewBox="0 0 16 16">
-                            <path d="M2.5 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"/>
-                            <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm13 2v2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zM2 14a1 1 0 0 1-1-1V6h14v7a1 1 0 0 1-1 1H2z"/>
-                          </svg>
+                        <img src="./images/team.svg" />
+                        <h2>Travail d'équipe</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis rerum, magni
+                            voluptatem
+                            sed
+                            architecto placeat beatae tenetur officia quod
+                        </p>
                     </div>
-                    <h3>Maquettage</h3>
                 </div>
 
             </div>
@@ -168,7 +151,7 @@
     <section id="techno">
         <div class="container">
 
-            <h1>Technologies</h1>
+            <h1>Techn<span>ol</span>ogies</h1>
 
             <div class="container_techno">
 
@@ -249,7 +232,7 @@
     <section id="projets">
         <div class="container">
 
-            <h1>Projets</h1>
+            <h1>Pro<span>j</span>ets</h1>
 
             <div class="container_portfolio">
 
@@ -314,7 +297,7 @@
     <footer>
         <section class="container">
             <div id="contact">
-                <h1>Contact</h1>
+                <h1>Con<span>t</span>act</h1>
                 <div class="contact-perso">
                     <p id="contact_perso">
                         <a href="tel:0642850880" target="_blank">
@@ -336,7 +319,8 @@
 
                     <h3>Réseaux Sociaux</h3>
                     <p id="reseaux">
-                        <a href="https://www.linkedin.com/in/dylan-brisseau-7a2a18239/" class="linkedin" target="_blank">
+                        <a href="https://www.linkedin.com/in/dylan-brisseau-7a2a18239/" class="linkedin"
+                            target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor"
                                 class="bi bi-linkedin" viewBox="0 0 16 16">
                                 <path
@@ -356,7 +340,30 @@
                 </div>
             </div>
         </section>
+        <div id="scrollUp">
+            <a id="button"></a>
+        </div>
     </footer>
+
+    <script>
+        btn = $('#button');
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 200) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+
+        btn.on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({ scrollTop: 0 }, '200');
+        });
+
+
+    </script>
+
 </body>
 
 </html>
