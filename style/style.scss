@@ -53,4 +53,94 @@ body {
         margin: 0 auto;
         position: relative;
     }
+
+    .title {
+        text-align: center;
+
+        .ribbon-left {
+            border-right: 0;
+            border-left: 12px solid transparent !important;
+            margin-right: 13px;
+        }
+
+        .light-ribbon {
+            display: inline-block;
+            border: 12px solid #fff;
+            border-radius: 2px;
+            width: 40px;
+        }
+
+        .dark-ribbon {
+            display: inline-block;
+            border: 12px solid #FF2416;
+            border-radius: 2px;
+            width: 40px;
+        }
+
+
+        .section-title {
+            font-size: 50px;
+            font-family: 'Yellowtail', cursive;
+            display: inline-block;
+            color: #003566;
+        }
+
+        .section-title-light {
+            font-size: 50px;
+            font-family: 'Yellowtail', cursive;
+            display: inline-block;
+            color: #fff;
+        }
+
+        .ribbon-right {
+            border-left: 0;
+            border-right: 12px solid transparent !important;
+            margin-left: 13px;
+        }
+
+    }
+
+    #scrollUp {
+        #button {
+            display: inline-block;
+            background-color: #003566;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            border-radius: 4px;
+            margin: 30px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            border-radius: 100px;
+            transition: background-color .3s;
+            z-index: 1000;
+            opacity: 0.3;
+
+            &:hover {
+                cursor: pointer;
+                background-color: #FF2416;
+                opacity: 1;
+            }
+
+            &:active {
+                background-color: #FF2416;
+            }
+
+            &::after {
+                content: "\f077";
+                font-family: FontAwesome;
+                font-weight: normal;
+                font-style: normal;
+                font-size: 2em;
+                line-height: 50px;
+                color: #fff;
+            }
+
+            .show {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
 }
