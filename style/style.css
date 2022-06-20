@@ -674,14 +674,12 @@ header .nav .nav-links a:hover {
   height: 360px;
   width: calc(100% - 10px);
   background-color: rgba(0, 0, 0, 0.8);
-  visibility: hidden;
   opacity: 0;
-  -webkit-transition: visibility 1s, opacity 1s, linear;
-  transition: visibility 1s, opacity 1s, linear;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
 }
 
 #portfolio-section #project-gallery .thumbnail .thumbnail-frame .project-description:hover {
-  visibility: visible;
   opacity: 1;
 }
 
@@ -724,6 +722,43 @@ header .nav .nav-links a:hover {
   text-decoration: none;
   text-shadow: 2px 2px #444;
   color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  #portfolio-section #project-gallery {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+  }
+  #portfolio-section #project-gallery #flexC {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  #portfolio-section #project-gallery #kome {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  #portfolio-section #project-gallery #zanzibar {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
+  #portfolio-section #project-gallery #travel {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 4;
+    grid-row: 4;
+  }
 }
 
 footer .container {
@@ -1001,7 +1036,6 @@ body #scrollUp #button::after {
 }
 
 body #scrollUp #button .show {
-  opacity: 1;
   visibility: visible;
 }
 /*# sourceMappingURL=style.css.map */

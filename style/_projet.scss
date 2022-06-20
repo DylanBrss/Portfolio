@@ -13,22 +13,22 @@
         margin-right: 10px;
         margin-top: 30px;
 
-        #flexC{
+        #flexC {
             grid-column: 1;
             grid-row: 1;
         }
 
-        #kome{
+        #kome {
             grid-column: 2;
             grid-row: 1;
         }
-        
-        #zanzibar{
+
+        #zanzibar {
             grid-column: 1;
             grid-row: 2;
         }
 
-        #travel{
+        #travel {
             grid-column: 2;
             grid-row: 2;
         }
@@ -60,15 +60,12 @@
                     height: 360px;
                     width: calc(100% - 10px);
                     background-color: rgba(0, 0, 0, 0.8);
-                    visibility: hidden;
                     opacity: 0;
-                    transition: visibility 1s, opacity 1s, linear;
+                    transition: opacity 1s;
 
                     &:hover {
-                        visibility: visible;
                         opacity: 1;
                     }
-
 
                     .project-description-title {
                         text-align: center;
@@ -112,6 +109,39 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #portfolio-section {
+        #project-gallery {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 30px;
+
+            #flexC {
+                grid-column: 1;
+                grid-row: 1;
+            }
+
+            #kome {
+                grid-column: 1;
+                grid-row: 2;
+            }
+
+            #zanzibar {
+                grid-column: 1;
+                grid-row: 3;
+            }
+
+            #travel {
+                grid-column: 1;
+                grid-row: 4;
             }
         }
     }
