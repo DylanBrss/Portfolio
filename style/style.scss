@@ -100,46 +100,30 @@ body {
 
     }
 
-    #scrollUp {
-        #button {
-            display: inline-block;
-            background-color: #003566;
-            width: 50px;
-            height: 50px;
-            text-align: center;
-            border-radius: 4px;
-            margin: 30px;
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            border-radius: 100px;
-            transition: background-color .3s;
-            z-index: 1000;
-            opacity: 0.3;
+    #scrolltop {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        transition: visibility 0s, opacity 0.5s ease-in;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #003566;
+        border-radius: 20%;
+        height: 50px;
 
-            &:hover {
-                cursor: pointer;
-                background-color: #FF2416;
-                opacity: 1;
-            }
+        &:hover{
+            background-color: #FF2416;
+        }
 
-            &:active {
-                background-color: #FF2416;
-            }
+        .top-button {
+            text-decoration: none;
+            cursor: pointer;
+            padding: 20px;
+            color: #fff;
 
-            &::after {
-                content: "\f077";
-                font-family: FontAwesome;
-                font-weight: normal;
-                font-style: normal;
-                font-size: 2em;
-                line-height: 50px;
-                color: #fff;
-            }
-
-            .show {
-                //opacity: 1;
-                visibility: visible;
+            i{
+                padding-top: 10px;
             }
         }
     }
