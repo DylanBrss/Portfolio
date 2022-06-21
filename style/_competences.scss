@@ -3,17 +3,186 @@ $color_p: #fff;
 
 #competences {
     height: 120vh;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 10px;
+    margin-bottom: 300px;
 
     .my-skills {
         margin-top: 10rem;
-        display: flex;
-        flex-wrap: wrap;
-        margin: 30px 0px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
 
 
-        .skill {
+        .skill-wp {
+            grid-column: 1;
+            grid-row: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+
+            .svg-container {
+                width: 300px;
+                height: 300px;
+                border: 3px solid #FF2416;
+                background-color: #003570;
+                border-radius: 10px;
+                margin-bottom: 1rem;
+
+                img {
+                    height: 100px;
+                    margin-top: 10px;
+                    margin-left: 10px;
+                    overflow: hidden;
+                    position: relative;
+                }
+
+                h2 {
+                    font-size: 1rem;
+                    color: white;
+                    margin-bottom: 10px;
+                    margin-top: 20px;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+
+                p {
+                    color: white;
+                    text-align: center;
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .skill-dev {
+            grid-column: 2;
+            grid-row: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+
+            .svg-container {
+                width: 300px;
+                height: 300px;
+                border: 3px solid #FF2416;
+                background-color: #003570;
+                border-radius: 10px;
+                margin-bottom: 1rem;
+
+                img {
+                    height: 100px;
+                    margin-top: 10px;
+                    margin-left: 10px;
+                    overflow: hidden;
+                    position: relative;
+                }
+
+                h2 {
+                    font-size: 1rem;
+                    color: white;
+                    margin-bottom: 10px;
+                    margin-top: 20px;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+
+                p {
+                    color: white;
+                    text-align: center;
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .skill-resp {
+            grid-column: 3;
+            grid-row: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+
+            .svg-container {
+                width: 300px;
+                height: 300px;
+                border: 3px solid #FF2416;
+                background-color: #003570;
+                border-radius: 10px;
+                margin-bottom: 1rem;
+
+                img {
+                    height: 100px;
+                    margin-top: 10px;
+                    margin-left: 10px;
+                    overflow: hidden;
+                    position: relative;
+                }
+
+                h2 {
+                    font-size: 1rem;
+                    color: white;
+                    margin-bottom: 10px;
+                    margin-top: 20px;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+
+                p {
+                    color: white;
+                    text-align: center;
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .skill-icon {
+            grid-column: 1;
+            grid-row: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+
+            .svg-container {
+                width: 300px;
+                height: 300px;
+                border: 3px solid #FF2416;
+                background-color: #003570;
+                border-radius: 10px;
+                margin-bottom: 1rem;
+
+                img {
+                    height: 100px;
+                    margin-top: 10px;
+                    margin-left: 10px;
+                    overflow: hidden;
+                    position: relative;
+                }
+
+                h2 {
+                    font-size: 1rem;
+                    color: white;
+                    margin-bottom: 10px;
+                    margin-top: 20px;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+
+                p {
+                    color: white;
+                    text-align: center;
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .skill-team {
+            grid-column: 2;
+            grid-row: 2;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -55,61 +224,79 @@ $color_p: #fff;
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
     #competences {
         height: 120vh;
-        margin-top: 100px;
+        margin-top: 400px;
 
         .my-skills {
             margin-top: 10rem;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin: 30px 0px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
 
+            .skill-wp {
+                grid-column: 1;
+                grid-row: 1;
+            }
 
-            .skill {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                padding: 1rem;
+            .skill-dev {
+                grid-column: 2;
+                grid-row: 1;
+            }
 
-                .svg-container {
-                    width: 300px;
-                    height: 300px;
-                    margin-bottom: 3rem;
-                }
+            .skill-resp {
+                grid-column: 1;
+                grid-row: 2;
+            }
+
+            .skill-icon {
+                grid-column: 2;
+                grid-row: 2;
+            }
+
+            .skill-team {
+                grid-column: 1;
+                grid-row: 3;
             }
         }
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     #competences {
-        height: 180vh;
-        margin-top: 100px;
-        margin-bottom: 100px;
+        height: 200vh;
+        margin-top: 400px;
 
         .my-skills {
             margin-top: 10rem;
-            display: flex;
-            flex-direction: column;
-            margin: 30px 0px;
+            ;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
 
 
-            .skill {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                padding: 1rem;
+            .skill-wp {
+                grid-column: 1;
+                grid-row: 1;
+            }
 
-                .svg-container {
-                    width: 300px;
-                    height: 300px;
-                    margin-bottom: 3rem;
-                }
+            .skill-dev {
+                grid-column: 1;
+                grid-row: 2;
+            }
+
+            .skill-resp {
+                grid-column: 1;
+                grid-row: 3;
+            }
+
+            .skill-icon {
+                grid-column: 1;
+                grid-row: 4;
+            }
+
+            .skill-team {
+                grid-column: 1;
+                grid-row: 5;
             }
         }
     }

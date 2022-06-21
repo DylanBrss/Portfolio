@@ -3,14 +3,15 @@ $color_white : #fff;
 $color_1 : #BEBEBE;
 
 #presentation {
+    margin-top: 50px;
+
     .container {
-        padding: 0 100px 0 100px;
         height: 100vh;
-        margin-top: 100px;
+        margin-top: 20px;
 
         #presentation-perso {
             display: flex;
-            max-width: 900px;
+            max-width: 1000px;
             margin-top: 100px;
             background-color: $background-color;
             box-shadow: 0 0 1.2rem rgb(0, 0, 0, );
@@ -21,12 +22,12 @@ $color_1 : #BEBEBE;
             right: 50%;
             transform: translateX(-50%);
 
-            p{
+            p {
                 color: #fff;
                 font-size: 20px;
             }
 
-            img{
+            img {
                 margin-top: -110px;
             }
         }
@@ -39,18 +40,18 @@ $color_1 : #BEBEBE;
             padding: 0 100px 0 100px;
             height: 50vh;
             margin-top: 100px;
-    
+
             #presentation-perso {
                 display: flex;
                 flex-direction: column;
-    
-                p{
+
+                p {
                     color: #fff;
                     font-size: 20px;
                 }
-    
-                img{
-                    margin-top: 5px;
+
+                img {
+                    margin-top: 2px;
                 }
             }
         }

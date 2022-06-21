@@ -7,6 +7,7 @@
 @import "footer";
 
 $color_1: #003566;
+$color_2 : #FF2416;
 $background-color_h2: #feed05;
 $font-family_h2: 'Macondo', cursive;
 
@@ -47,10 +48,10 @@ body {
     }
 
     .container {
-        width: 90%;
+        width: 100%;
         max-width: 120rem;
-        height: 40%;
-        margin: 0 auto;
+        height: auto;
+        margin: auto;
         position: relative;
     }
 
@@ -103,28 +104,43 @@ body {
     #scrolltop {
         display: block;
         visibility: visible;
-        opacity: 1;
+        opacity: 0.2;
         transition: visibility 0s, opacity 0.5s ease-in;
         position: fixed;
         bottom: 20px;
         right: 20px;
         background-color: #003566;
         border-radius: 20%;
-        height: 50px;
+        height: 35px;
 
         &:hover {
             background-color: #FF2416;
+            animation: rotate 1s linear;
         }
 
         .top-button {
             text-decoration: none;
             cursor: pointer;
-            padding: 20px;
+            padding: 10px 10px;
             color: #fff;
 
             i {
-                padding-top: 10px;
+                font-size: 30px;
             }
         }
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
     }
 }

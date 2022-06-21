@@ -296,21 +296,23 @@ header .nav .nav-links a:hover {
 
 #competences {
   height: 120vh;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 10px;
+  margin-bottom: 300px;
 }
 
 #competences .my-skills {
   margin-top: 10rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 30px 0px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
 }
 
-#competences .my-skills .skill {
+#competences .my-skills .skill-wp {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -327,7 +329,7 @@ header .nav .nav-links a:hover {
   padding: 1rem;
 }
 
-#competences .my-skills .skill .svg-container {
+#competences .my-skills .skill-wp .svg-container {
   width: 300px;
   height: 300px;
   border: 3px solid #FF2416;
@@ -336,7 +338,7 @@ header .nav .nav-links a:hover {
   margin-bottom: 1rem;
 }
 
-#competences .my-skills .skill .svg-container img {
+#competences .my-skills .skill-wp .svg-container img {
   height: 100px;
   margin-top: 10px;
   margin-left: 10px;
@@ -344,7 +346,7 @@ header .nav .nav-links a:hover {
   position: relative;
 }
 
-#competences .my-skills .skill .svg-container h2 {
+#competences .my-skills .skill-wp .svg-container h2 {
   font-size: 1rem;
   color: white;
   margin-bottom: 10px;
@@ -353,89 +355,309 @@ header .nav .nav-links a:hover {
   text-align: center;
 }
 
-#competences .my-skills .skill .svg-container p {
+#competences .my-skills .skill-wp .svg-container p {
   color: white;
   text-align: center;
   font-size: 12px;
 }
 
-@media screen and (max-width: 1200px) {
+#competences .my-skills .skill-dev {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+#competences .my-skills .skill-dev .svg-container {
+  width: 300px;
+  height: 300px;
+  border: 3px solid #FF2416;
+  background-color: #003570;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+#competences .my-skills .skill-dev .svg-container img {
+  height: 100px;
+  margin-top: 10px;
+  margin-left: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+#competences .my-skills .skill-dev .svg-container h2 {
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#competences .my-skills .skill-dev .svg-container p {
+  color: white;
+  text-align: center;
+  font-size: 12px;
+}
+
+#competences .my-skills .skill-resp {
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+#competences .my-skills .skill-resp .svg-container {
+  width: 300px;
+  height: 300px;
+  border: 3px solid #FF2416;
+  background-color: #003570;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+#competences .my-skills .skill-resp .svg-container img {
+  height: 100px;
+  margin-top: 10px;
+  margin-left: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+#competences .my-skills .skill-resp .svg-container h2 {
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#competences .my-skills .skill-resp .svg-container p {
+  color: white;
+  text-align: center;
+  font-size: 12px;
+}
+
+#competences .my-skills .skill-icon {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+#competences .my-skills .skill-icon .svg-container {
+  width: 300px;
+  height: 300px;
+  border: 3px solid #FF2416;
+  background-color: #003570;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+#competences .my-skills .skill-icon .svg-container img {
+  height: 100px;
+  margin-top: 10px;
+  margin-left: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+#competences .my-skills .skill-icon .svg-container h2 {
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#competences .my-skills .skill-icon .svg-container p {
+  color: white;
+  text-align: center;
+  font-size: 12px;
+}
+
+#competences .my-skills .skill-team {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+#competences .my-skills .skill-team .svg-container {
+  width: 300px;
+  height: 300px;
+  border: 3px solid #FF2416;
+  background-color: #003570;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+#competences .my-skills .skill-team .svg-container img {
+  height: 100px;
+  margin-top: 10px;
+  margin-left: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+#competences .my-skills .skill-team .svg-container h2 {
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#competences .my-skills .skill-team .svg-container p {
+  color: white;
+  text-align: center;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 1024px) {
   #competences {
     height: 120vh;
-    margin-top: 100px;
+    margin-top: 400px;
   }
   #competences .my-skills {
     margin-top: 10rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: 30px 0px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
-  #competences .my-skills .skill {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 1rem;
+  #competences .my-skills .skill-wp {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 1;
+    grid-row: 1;
   }
-  #competences .my-skills .skill .svg-container {
-    width: 300px;
-    height: 300px;
-    margin-bottom: 3rem;
+  #competences .my-skills .skill-dev {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  #competences .my-skills .skill-resp {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  #competences .my-skills .skill-icon {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  #competences .my-skills .skill-team {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 3;
+    grid-row: 3;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   #competences {
-    height: 180vh;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    height: 200vh;
+    margin-top: 400px;
   }
   #competences .my-skills {
     margin-top: 10rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: 30px 0px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
   }
-  #competences .my-skills .skill {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 1rem;
+  #competences .my-skills .skill-wp {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 1;
+    grid-row: 1;
   }
-  #competences .my-skills .skill .svg-container {
-    width: 300px;
-    height: 300px;
-    margin-bottom: 3rem;
+  #competences .my-skills .skill-dev {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  #competences .my-skills .skill-resp {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
+  #competences .my-skills .skill-icon {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 4;
+    grid-row: 4;
+  }
+  #competences .my-skills .skill-team {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 5;
+    grid-row: 5;
   }
 }
 
@@ -559,14 +781,14 @@ header .nav .nav-links a:hover {
 }
 
 .Techno .card .content h2 {
-  color: #fff;
+  color: #000;
   text-transform: uppercase;
   font-size: 2.5em;
   line-height: 1em;
 }
 
 .Techno .card .content p {
-  color: #fff;
+  color: #000;
 }
 
 .Techno .card:hover .circle::before {
@@ -625,17 +847,20 @@ header .nav .nav-links a:hover {
   }
 }
 
+#presentation {
+  margin-top: 50px;
+}
+
 #presentation .container {
-  padding: 0 100px 0 100px;
   height: 100vh;
-  margin-top: 100px;
+  margin-top: 20px;
 }
 
 #presentation .container #presentation-perso {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 900px;
+  max-width: 1000px;
   margin-top: 100px;
   background-color: #003566;
   -webkit-box-shadow: 0 0 1.2rem black;
@@ -678,7 +903,7 @@ header .nav .nav-links a:hover {
     font-size: 20px;
   }
   #presentation .container #presentation-perso img {
-    margin-top: 5px;
+    margin-top: 2px;
   }
 }
 
@@ -1033,10 +1258,10 @@ body h4 {
 }
 
 body .container {
-  width: 90%;
+  width: 100%;
   max-width: 120rem;
-  height: 40%;
-  margin: 0 auto;
+  height: auto;
+  margin: auto;
   position: relative;
 }
 
@@ -1087,7 +1312,7 @@ body .title .ribbon-right {
 body #scrolltop {
   display: block;
   visibility: visible;
-  opacity: 1;
+  opacity: 0.2;
   -webkit-transition: visibility 0s, opacity 0.5s ease-in;
   transition: visibility 0s, opacity 0.5s ease-in;
   position: fixed;
@@ -1095,21 +1320,53 @@ body #scrolltop {
   right: 20px;
   background-color: #003566;
   border-radius: 20%;
-  height: 50px;
+  height: 35px;
 }
 
 body #scrolltop:hover {
   background-color: #FF2416;
+  -webkit-animation: rotate 1s linear;
+          animation: rotate 1s linear;
 }
 
 body #scrolltop .top-button {
   text-decoration: none;
   cursor: pointer;
-  padding: 20px;
+  padding: 10px 10px;
   color: #fff;
 }
 
 body #scrolltop .top-button i {
-  padding-top: 10px;
+  font-size: 30px;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 /*# sourceMappingURL=style.css.map */
