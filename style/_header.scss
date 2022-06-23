@@ -12,9 +12,12 @@ header {
     background-color: #003566;
 
     .nav {
-        height: 50px;
+        height: 80px;
         width: 100%;
-        position: relative;
+        position: fixed;
+        background-color: $background-color_nav;
+        z-index: 1;
+        padding: 10px;
 
         #nav-check {
             display: none;
@@ -27,14 +30,14 @@ header {
                 display: inline-block;
                 font-size: 30px;
                 color: #fff;
-                padding: 10px 10px 10px 10px;
+                //padding: 10px 10px 10px 10px;
 
                 // span {
                 //     color: #fe1414;
                 // }
 
                 img{
-                    height: 130px;
+                    height: 60px;
                 }
             }
         }
@@ -65,7 +68,6 @@ header {
 @media screen and (max-width: 1200px) {
     header {
         .nav {
-            
             #nav-check {
                 &:not(:checked)~.nav-links {
                     height: 0px;
@@ -74,6 +76,7 @@ header {
                 &:checked~.nav-links {
                     height: 400px;
                     overflow-y: auto;
+                    z-index: -1;
                 }
             }
 
