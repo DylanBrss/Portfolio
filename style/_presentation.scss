@@ -11,7 +11,7 @@ $color_1 : #BEBEBE;
 
         #presentation-perso {
             display: flex;
-            max-width: 1000px;
+            width: 1000px;
             margin-top: 100px;
             background-color: $background-color;
             box-shadow: 0 0 1.2rem rgb(0, 0, 0, );
@@ -22,7 +22,7 @@ $color_1 : #BEBEBE;
             right: 50%;
             transform: translateX(-50%);
 
-            p {
+            .pres {
                 color: #fff;
                 font-size: 20px;
             }
@@ -34,7 +34,7 @@ $color_1 : #BEBEBE;
     }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and(min-width: 768px) and (max-width: 991px) {
     #presentation {
         .container {
             padding: 0 100px 0 100px;
@@ -44,14 +44,46 @@ $color_1 : #BEBEBE;
             #presentation-perso {
                 display: flex;
                 flex-direction: column;
+                width: 750px;
 
-                p {
+                .pres {
                     color: #fff;
                     font-size: 20px;
                 }
 
                 img {
                     margin-top: 2px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #presentation {
+        .container {
+            height: 200px;
+            width: 90%;
+            margin-top: 100px;
+
+            #presentation-perso{
+                display: grid;
+                grid-template-columns: 1 1fr;
+                padding: 5px;
+                width: 100%;
+                max-height: 1000px;
+
+                .pres{
+                    grid-column: 1;
+                    grid-row: 1;
+                    text-align: center;
+                }
+
+                img{
+                    grid-column: 1;
+                    grid-row: 2;
+                    height: 310px;
+                    padding-top: 10px;
                 }
             }
         }

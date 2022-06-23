@@ -73,7 +73,7 @@
         </div>
         <div class="container">
             <div id="presentation-perso">
-                <p>
+                <p class="pres">
                     Bonjour, je m'appelle Dylan, j'ai 22 ans je suis dîplomé d'un BTS SIO.
                     Je suis actuellement en formation de Développeur Front-End. Que je poursuiverai
                     avec la parti Back-End pour le diplôme du titre professionel de "Développeur web & web mobile" chez
@@ -85,7 +85,7 @@
                     mes principaux projets.
                     Pour toute question, n’hésitez pas à me contacter :)
                 </p>
-                <img src="./images/Avatar.png">
+                <img src="./images/Avatar.png" alt="avatar">
             </div>
         </div>
     </section>
@@ -299,9 +299,10 @@
                             <span class="tag">HTML</span>
                             <span class="tag">CSS</span>
                         </p>
-                        <p class="category-separator">Liens</p>
-                        <p><a class="visit-button" href="https://webagency.loiscuby.fr"><span
-                                    class="fas fa-globe-americas fa-space-right"></span>Accéder au site</a></p>
+                        <p class="category-separator">Liens
+                            <a class="visit-button" href="https://webagency.loiscuby.fr"><span
+                                    class="fas fa-globe-americas fa-space-right"></span>Accéder au site</a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -379,13 +380,13 @@
 
     <!-- Footer -->
     <footer>
+        <div class="title">
+            <div class="dark-ribbon ribbon-left"></div>
+            <h2 class="section-title">Contact</h2>
+            <div class="dark-ribbon ribbon-right"></div>
+        </div>
         <section class="container">
             <div id="contact">
-                <div class="title">
-                    <div class="dark-ribbon ribbon-left"></div>
-                    <h2 class="section-title">Contact</h2>
-                    <div class="dark-ribbon ribbon-right"></div>
-                </div>
                 <div class="contact-perso">
                     <p id="contact_perso">
                         <a href="tel:0642850880" target="_blank">
@@ -429,11 +430,14 @@
             </div>
         </section>
     </footer>
+
+    <!-- Bouton retour accueil -->
     <div id="scrolltop">
         <a class="top-button" href="#header">
             <i class="icon-arrow-up"></i>
         </a>
     </div>
+
     <script type="text/javascript" src="./scripts/script.js"></script>
 </body>
 

@@ -137,7 +137,7 @@
                     bottom: 30px;
                     left: 50%;
                     transform: translate(-50%, 0%) scale(1);
-                    height: 300px;
+                    height: 100px;
                 }
             }
 
@@ -156,6 +156,14 @@
                 left: 0;
                 padding: 40px;
             }
+        }
+        .logo-b {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            height: 100px;
+            transform: 0.5s;
         }
     }
 }
@@ -188,21 +196,20 @@
                 }
             }
 
-            .circle{
-                .logo-f {
-                    position: relative;
-                    width: 70px;
-                    height: 70px;
-                    transition: 0.5s;
-                    transition-delay: 0.5s;
-                }
-            }
-
             .content {
                 width: 100%;
                 left: 0;
                 padding: 40px;
             }
+        }
+
+        .logo-b {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            height: 10  0px;
+            transform: 0.5s;
         }
     }
 }
