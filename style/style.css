@@ -24,8 +24,8 @@ header .nav .nav-header .nav-title {
   padding: 10px 10px 10px 10px;
 }
 
-header .nav .nav-header .nav-title span {
-  color: #fe1414;
+header .nav .nav-header .nav-title img {
+  height: 130px;
 }
 
 header .nav .nav-btn {
@@ -807,7 +807,7 @@ header .nav .nav-links a:hover {
           transform: 0.5s;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (min-width: 768) and (max-width: 991px) {
   .Techno .container-techno {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -839,6 +839,64 @@ header .nav .nav-links a:hover {
     -webkit-transform: translate(-50%, 0%) scale(1);
             transform: translate(-50%, 0%) scale(1);
     height: 300px;
+  }
+  .Techno .card .circle .logo-f {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-transition-delay: 0.5s;
+            transition-delay: 0.5s;
+  }
+  .Techno .card .content {
+    width: 100%;
+    left: 0;
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 767) {
+  .Techno .container-techno {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    min-height: 100vh;
+  }
+  .Techno .card {
+    width: auto;
+    max-width: 350px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .Techno .card:hover {
+    height: 600px;
+  }
+  .Techno .card:hover .logo-b {
+    top: initial;
+    bottom: 30px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%) scale(1);
+            transform: translate(-50%, 0%) scale(1);
+    height: 300px;
+  }
+  .Techno .card .circle .logo-f {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-transition-delay: 0.5s;
+            transition-delay: 0.5s;
   }
   .Techno .card .content {
     width: 100%;
