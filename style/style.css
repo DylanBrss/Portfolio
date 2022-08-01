@@ -300,11 +300,6 @@ header .nav .nav-links a:hover {
   }
 }
 
-#competences {
-  margin-top: 10px;
-  margin-bottom: 100px;
-}
-
 #competences .my-skills {
   margin-top: 10rem;
   display: -ms-grid;
@@ -626,6 +621,7 @@ header .nav .nav-links a:hover {
   #competences {
     height: 200vh;
     margin-top: 400px;
+    margin-bottom: 400px;
   }
   #competences .my-skills {
     margin-top: 10rem;
@@ -666,7 +662,7 @@ header .nav .nav-links a:hover {
   }
 }
 
-.Techno .container-techno {
+#techno .container-techno {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -681,7 +677,7 @@ header .nav .nav-links a:hover {
   min-height: 100vh;
 }
 
-.Techno .card {
+#techno .card {
   position: relative;
   width: 300px;
   height: 350px;
@@ -702,20 +698,20 @@ header .nav .nav-links a:hover {
           align-items: center;
 }
 
-.Techno .card:hover {
+#techno .card:hover {
   width: 600px;
   -webkit-transition-delay: 0.5s;
           transition-delay: 0.5s;
 }
 
-.Techno .card:hover .logo-f {
+#techno .card:hover .logo-f {
   -webkit-transform: scale(0);
           transform: scale(0);
   -webkit-transition-delay: 0.5s;
           transition-delay: 0.5s;
 }
 
-.Techno .card:hover .content {
+#techno .card:hover .content {
   left: 0;
   opacity: 1;
   visibility: visible;
@@ -723,7 +719,7 @@ header .nav .nav-links a:hover {
           transition-delay: 0.5s;
 }
 
-.Techno .card:hover .logo-b {
+#techno .card:hover .logo-b {
   left: 72%;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
@@ -731,7 +727,7 @@ header .nav .nav-links a:hover {
           transition-delay: 0.5s;
 }
 
-.Techno .card .circle {
+#techno .card .circle {
   position: absolute;
   top: 0;
   left: 0;
@@ -750,7 +746,7 @@ header .nav .nav-links a:hover {
           align-items: center;
 }
 
-.Techno .card .circle::before {
+#techno .card .circle::before {
   content: '';
   position: absolute;
   top: 0;
@@ -764,7 +760,7 @@ header .nav .nav-links a:hover {
   transition: 0.5s;
 }
 
-.Techno .card .circle .logo-f {
+#techno .card .circle .logo-f {
   position: relative;
   width: 100px;
   height: 100px;
@@ -774,7 +770,7 @@ header .nav .nav-links a:hover {
           transition-delay: 0.5s;
 }
 
-.Techno .card .content {
+#techno .card .content {
   position: relative;
   width: 50%;
   left: 20%;
@@ -785,23 +781,23 @@ header .nav .nav-links a:hover {
   transition: 0.5s;
 }
 
-.Techno .card .content h2 {
+#techno .card .content h2 {
   color: #000;
   text-transform: uppercase;
   font-size: 2.5em;
   line-height: 1em;
 }
 
-.Techno .card .content p {
+#techno .card .content p {
   color: #000;
 }
 
-.Techno .card:hover .circle::before {
+#techno .card:hover .circle::before {
   -webkit-clip-path: circle(400px at center);
           clip-path: circle(400px at center);
 }
 
-.Techno .logo-b {
+#techno .logo-b {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -813,7 +809,7 @@ header .nav .nav-links a:hover {
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .Techno .container-techno {
+  #techno .container-techno {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -827,17 +823,17 @@ header .nav .nav-links a:hover {
         flex-wrap: wrap;
     min-height: 100vh;
   }
-  .Techno .card {
+  #techno .card {
     width: auto;
     max-width: 350px;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  .Techno .card:hover {
+  #techno .card:hover {
     height: 600px;
   }
-  .Techno .card:hover .logo-b {
+  #techno .card:hover .logo-b {
     top: initial;
     bottom: 30px;
     left: 50%;
@@ -845,7 +841,7 @@ header .nav .nav-links a:hover {
             transform: translate(-50%, 0%) scale(1);
     height: 100px;
   }
-  .Techno .card .circle .logo-f {
+  #techno .card .circle .logo-f {
     position: relative;
     width: 100px;
     height: 100px;
@@ -854,12 +850,12 @@ header .nav .nav-links a:hover {
     -webkit-transition-delay: 0.5s;
             transition-delay: 0.5s;
   }
-  .Techno .card .content {
+  #techno .card .content {
     width: 100%;
     left: 0;
     padding: 40px;
   }
-  .Techno .logo-b {
+  #techno .logo-b {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -872,7 +868,7 @@ header .nav .nav-links a:hover {
 }
 
 @media screen and (max-width: 767px) {
-  .Techno .container-techno {
+  #techno .container-techno {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -886,17 +882,17 @@ header .nav .nav-links a:hover {
         flex-wrap: wrap;
     min-height: 100vh;
   }
-  .Techno .card {
+  #techno .card {
     width: auto;
     max-width: 350px;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  .Techno .card:hover {
+  #techno .card:hover {
     height: 600px;
   }
-  .Techno .card:hover .logo-b {
+  #techno .card:hover .logo-b {
     top: initial;
     bottom: 30px;
     left: 50%;
@@ -904,12 +900,12 @@ header .nav .nav-links a:hover {
             transform: translate(-50%, 0%) scale(1);
     height: 300px;
   }
-  .Techno .card .content {
+  #techno .card .content {
     width: 100%;
     left: 0;
     padding: 40px;
   }
-  .Techno .logo-b {
+  #techno .logo-b {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -926,7 +922,6 @@ header .nav .nav-links a:hover {
 }
 
 #presentation .container {
-  height: 100vh;
   margin-top: 20px;
 }
 
@@ -1015,14 +1010,14 @@ header .nav .nav-links a:hover {
 }
 
 /* Portfolio section styles */
-#portfolio-section {
+#projets {
   background-color: #003566;
   color: #fff;
   padding-top: 50px;
   padding-bottom: 20px;
 }
 
-#portfolio-section #project-gallery {
+#projets #project-gallery {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -1033,39 +1028,39 @@ header .nav .nav-links a:hover {
   margin-top: 30px;
 }
 
-#portfolio-section #project-gallery #flexC {
+#projets #project-gallery #flexC {
   -ms-grid-column: 1;
   grid-column: 1;
   -ms-grid-row: 1;
   grid-row: 1;
 }
 
-#portfolio-section #project-gallery #kome {
+#projets #project-gallery #kome {
   -ms-grid-column: 2;
   grid-column: 2;
   -ms-grid-row: 1;
   grid-row: 1;
 }
 
-#portfolio-section #project-gallery #zanzibar {
+#projets #project-gallery #zanzibar {
   -ms-grid-column: 1;
   grid-column: 1;
   -ms-grid-row: 2;
   grid-row: 2;
 }
 
-#portfolio-section #project-gallery #travel {
+#projets #project-gallery #travel {
   -ms-grid-column: 2;
   grid-column: 2;
   -ms-grid-row: 2;
   grid-row: 2;
 }
 
-#portfolio-section #project-gallery .thumbnail {
+#projets #project-gallery .thumbnail {
   margin-bottom: 30px;
 }
 
-#portfolio-section #project-gallery .thumbnail .thumbnail-frame {
+#projets #project-gallery .thumbnail .thumbnail-frame {
   position: relative;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -1075,7 +1070,7 @@ header .nav .nav-links a:hover {
           box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.3);
 }
 
-#portfolio-section #project-gallery .thumbnail .thumbnail-frame .thumbnail-img {
+#projets #project-gallery .thumbnail .thumbnail-frame .thumbnail-img {
   height: 360px;
   width: 100%;
   -o-object-fit: cover;
@@ -1084,7 +1079,7 @@ header .nav .nav-links a:hover {
      object-position: 50%;
 }
 
-#portfolio-section #project-gallery .thumbnail .thumbnail-frame .project-description {
+#projets #project-gallery .thumbnail .thumbnail-frame .project-description {
   margin: 5px 0 5px 5px;
   padding: 10px;
   position: absolute;
@@ -1098,38 +1093,38 @@ header .nav .nav-links a:hover {
   transition: opacity 1s;
 }
 
-#portfolio-section #project-gallery .thumbnail .thumbnail-frame .project-description:hover {
+#projets #project-gallery .thumbnail .thumbnail-frame .project-description:hover {
   opacity: 1;
 }
 
-#portfolio-section #project-gallery .thumbnail .thumbnail-frame .project-description .project-description-title {
+#projets #project-gallery .thumbnail .thumbnail-frame .project-description .project-description-title {
   text-align: center;
   font-size: 22px;
 }
 
-#portfolio-section #project-gallery .thumbnail .thumbnail-frame .project-description .project-description-text {
+#projets #project-gallery .thumbnail .thumbnail-frame .project-description .project-description-text {
   text-align: center;
   font-style: italic;
   color: #ddd;
 }
 
-#portfolio-section #project-gallery .thumbnail .thumbnail-frame .project-description .tags-list {
+#projets #project-gallery .thumbnail .thumbnail-frame .project-description .tags-list {
   line-height: 35px;
   margin: 50px;
 }
 
-#portfolio-section #project-gallery .thumbnail .thumbnail-frame .project-description .tags-list .tag {
+#projets #project-gallery .thumbnail .thumbnail-frame .project-description .tags-list .tag {
   padding: 5px;
   background-color: #f05f40;
   border-radius: 5px;
 }
 
-#portfolio-section #project-gallery .thumbnail .thumbnail-frame .project-description .category-separator {
+#projets #project-gallery .thumbnail .thumbnail-frame .project-description .category-separator {
   font-size: 15px;
   padding-top: 20px;
 }
 
-#portfolio-section #project-gallery .thumbnail .thumbnail-frame .project-description .visit-button {
+#projets #project-gallery .thumbnail .thumbnail-frame .project-description .visit-button {
   padding: 10px;
   margin: 50px;
   background-color: #f05f40;
@@ -1137,14 +1132,14 @@ header .nav .nav-links a:hover {
   color: #fff;
 }
 
-#portfolio-section #project-gallery .thumbnail .thumbnail-frame .project-description .visit-button:hover {
+#projets #project-gallery .thumbnail .thumbnail-frame .project-description .visit-button:hover {
   text-decoration: none;
   text-shadow: 2px 2px #444;
   color: #fff;
 }
 
 @media screen and (max-width: 1024px) {
-  #portfolio-section #project-gallery {
+  #projets #project-gallery {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[1];
@@ -1154,31 +1149,31 @@ header .nav .nav-links a:hover {
     margin-right: 10px;
     margin-top: 30px;
   }
-  #portfolio-section #project-gallery #flexC {
+  #projets #project-gallery #flexC {
     -ms-grid-column: 1;
     grid-column: 1;
     -ms-grid-row: 1;
     grid-row: 1;
   }
-  #portfolio-section #project-gallery #kome {
+  #projets #project-gallery #kome {
     -ms-grid-column: 1;
     grid-column: 1;
     -ms-grid-row: 2;
     grid-row: 2;
   }
-  #portfolio-section #project-gallery #zanzibar {
+  #projets #project-gallery #zanzibar {
     -ms-grid-column: 1;
     grid-column: 1;
     -ms-grid-row: 3;
     grid-row: 3;
   }
-  #portfolio-section #project-gallery #travel {
+  #projets #project-gallery #travel {
     -ms-grid-column: 1;
     grid-column: 1;
     -ms-grid-row: 4;
     grid-row: 4;
   }
-  #portfolio-section #project-gallery .thumbnail .project-description .visit-button {
+  #projets #project-gallery .thumbnail .project-description .visit-button {
     padding: 10px;
     margin: 10px;
     background-color: #f05f40;

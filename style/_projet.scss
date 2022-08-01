@@ -1,5 +1,5 @@
 /* Portfolio section styles */
-#portfolio-section {
+#projets {
     background-color: #003566;
     color: #fff;
     padding-top: 50px;
@@ -115,7 +115,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-    #portfolio-section {
+    #projets {
         #project-gallery {
             display: grid;
             grid-template-columns: repeat(1, 1fr);
