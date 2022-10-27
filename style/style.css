@@ -1055,27 +1055,39 @@ body #scrolltop {
   display: block;
   visibility: visible;
   opacity: 0.2;
+<<<<<<< HEAD
   transition: visibility 0s, opacity 0.5s ease-in;
+=======
+>>>>>>> f13e85d04ee637f531c576d6dc3af344638c71a9
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #003566;
+  background-color: #fff;
   border-radius: 20%;
+<<<<<<< HEAD
   height: 35px;
 }
 body #scrolltop:hover {
   background-color: #FF2416;
   -webkit-animation: rotate 1s linear;
           animation: rotate 1s linear;
+=======
+  height: 30px;
+>>>>>>> f13e85d04ee637f531c576d6dc3af344638c71a9
 }
 body #scrolltop .top-button {
   text-decoration: none;
   cursor: pointer;
   padding: 10px 10px;
-  color: #fff;
+  color: #003566;
+  opacity: 0.5;
 }
 body #scrolltop .top-button i {
-  font-size: 30px;
+  font-size: 25px;
+}
+
+body #scrolltop .top-button:hover {
+  opacity: 1;
 }
 
 @-webkit-keyframes rotate {
