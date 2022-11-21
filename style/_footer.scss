@@ -1,142 +1,24 @@
-$background-color : #003566;
-$color_white : #fff;
-$color_1 : #BEBEBE;
+.site-footer {
+    color: #fff;
+    background-color: #003566;
 
-footer {
     .container {
-        #contact {
-            height: 100vh;
-            margin-top: 100px;
+        width: 750px;
+        height: 100px;
 
-            .contact-perso {
-                max-width: 900px;
-                margin-top: 100px;
-                background-color: $background-color;
-                box-shadow: 0 0 1.2rem rgb(0, 0, 0, );
-                padding: 50px;
-                position: relative;
-                top: -70px;
-                left: 50%;
-                right: 50%;
-                transform: translateX(-50%);
-
-                #contact_perso {
-                    font-size: 1.3rem;
-                    color: $color_1;
-                    text-align: center;
-
-                    &:nth-child(2) {
-                        margin-top: 30px;
-                    }
-
-                    &:last-child {
-                        margin-top: 30px;
-                    }
-
-                    a {
-                        text-decoration: none;
-
-                        svg {
-                            fill: $color_white;
-                        }
-                    }
-                }
-
-                h3 {
-                    color: $color_white;
-                    text-align: center;
-                    margin: 50px 0;
-                    font-size: 40px;
-                }
-
-                #reseaux {
-                    font-size: 1.3rem;
-                    text-align: center;
-
-                    .linkedin {
-                        margin-right: 50px;
-
-                        svg {
-                            fill: #fff;
-
-                            &:hover {
-                                background-color: #fff;
-                                fill: #003566;
-                            }
-                        }
-                    }
-
-                    .github {
-                        margin-left: 50px;
-
-                        svg {
-                            fill: #fff;
-
-                            &:hover {
-                                background-color: #fff;
-                                fill: #003566;
-                            }
-                        }
-                    }
-                }
-
-                h4 {
-                    color: $color_white;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    footer {
-        .container {
-            padding: 0 100px 0 100px;
-
-            #contact {
-                height: 100vh;
-                margin-top: 100px;
-
-                .contact-perso {
-                    max-width: 900px;
-                    margin-top: 100px;
-                    background-color: $background-color;
-                    box-shadow: 0 0 1.2rem rgb(0, 0, 0, );
-                    padding: 50px;
-                    position: relative;
-                    transform: translateX(-50%);
-                }
-            }
+        #copyright {
+            text-align: center;
+            padding-top: 50px;
         }
     }
 }
 
 @media screen and (max-width: 768px) {
-    footer {
+    .site-footer {
+
         .container {
-
-            #contact {
-                height: 100vh;
-                margin-top: 100px;
-
-                .contact-perso {
-                    width: 400px;
-
-                    #contact_perso {
-                        font-size: 1.3rem;
-                        color: $color_1;
-                        text-align: center;
-                        display: flex;
-                        flex-direction: column;
-                    }
-
-                    #reseaux {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: center;
-                    }
-                }
-            }
+            width: 750px;
+            height: 100px;
         }
     }
 }

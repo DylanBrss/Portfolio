@@ -4,10 +4,12 @@
 @import "technologies";
 @import "presentation";
 @import "projet";
+@import "contact";
 @import "footer";
 
 $color_1: #003566;
 $color_2 : #FF2416;
+$color_3 : #000;
 $background-color_h2: #feed05;
 
 * {
@@ -31,7 +33,7 @@ body {
         text-align: center;
 
         span {
-            color: red;
+            color: $color_2;
         }
     }
 
@@ -72,7 +74,7 @@ body {
 
         .dark-ribbon {
             display: inline-block;
-            border: 12px solid #FF2416;
+            border: 12px solid $color_1;
             border-radius: 2px;
             width: 40px;
         }
@@ -82,7 +84,7 @@ body {
             font-size: 50px;
             font-family: 'Yellowtail', cursive;
             display: inline-block;
-            color: #003566;
+            color: $color_1;
         }
 
         .section-title-light {
@@ -96,35 +98,6 @@ body {
             border-left: 0;
             border-right: 12px solid transparent !important;
             margin-left: 13px;
-        }
-
-    }
-
-    #scrolltop {
-        display: block;
-        visibility: visible;
-        opacity: 0.2;
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background-color: #fff;
-        border-radius: 20%;
-        height: 30px;
-
-        .top-button {
-            text-decoration: none;
-            cursor: pointer;
-            padding: 10px 10px;
-            color: #003566;
-            opacity: 0.5;
-
-            i {
-                font-size: 25px;
-            }
-
-            &:hover{
-                opacity: 1;
-            }
         }
     }
 }
@@ -140,5 +113,55 @@ body {
 
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 769px) {
+    body {
+
+        .title {
+            text-align: center;
+
+            .ribbon-left {
+                border-right: 0;
+                border-left: 12px solid transparent !important;
+                margin-right: 13px;
+            }
+
+            .ribbon-right {
+                border-left: 0;
+                border-right: 12px solid transparent !important;
+                margin-left: 13px;
+            }
+
+            .light-ribbon {
+                display: inline-block;
+                border: 12px solid #fff;
+                border-radius: 2px;
+                width: 10px;
+            }
+
+            .dark-ribbon {
+                display: inline-block;
+                border: 12px solid $color_1;
+                border-radius: 2px;
+                width: 10px;
+            }
+
+
+            .section-title {
+                font-size: 50px;
+                font-family: 'Yellowtail', cursive;
+                display: inline-block;
+                color: $color_1;
+            }
+
+            .section-title-light {
+                font-size: 50px;
+                font-family: 'Yellowtail', cursive;
+                display: inline-block;
+                color: #fff;
+            }
+        }
     }
 }

@@ -1,215 +1,367 @@
 #techno {
-
     .container-techno {
+        padding: 1px 5px;
+        margin: 40px 0;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        min-height: 100vh;
-    }
+        justify-content: space-evenly;
 
-    .card {
-        position: relative;
-        width: 300px;
-        height: 350px;
-        margin: 20px;
-        border-radius: 20px;
-        transition: 0.5s;
-        transition-delay: 0.5s;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
 
-        &:hover {
-            width: 600px;
-            transition-delay: 0.5s;
+        .container-bar-front {
 
-            .logo-f {
-                transform: scale(0);
-                transition-delay: 0.5s;
+            h3 {
+                text-align: center;
             }
 
-            .content {
-                left: 0;
-                opacity: 1;
-                visibility: visible;
-                transition-delay: 0.5s;
-            }
+            .container-bar {
+                width: 300px;
 
-            .logo-b {
-                left: 72%;
-                transform: translate(-50%, -50%) scale(1);
-                transition-delay: 0.5s;
+                p {
+                    font-size: 15px;
+                    padding-top: 10px;
+                    text-align: left;
+                    font-weight: 600;
+                }
+
+                .progress {
+                    padding: 2px;
+                    background: #b3b4b6;
+                    border-radius: 5px;
+                    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+
+                    .progress-bar-html {
+                        background-color: #003566;
+                        width: 80%;
+                        animation: progressAnimationStrike 6s;
+                        text-align: right;
+                        padding-right: 10px;
+
+                        .pourcent {
+                            color: #003566;
+                            font-weight: 600;
+                        }
+                    }
+
+                    .progress-bar-css {
+                        background-color: #003566;
+                        width: 80%;
+                        animation: progressAnimationStrike 6s;
+                        text-align: right;
+                        padding-right: 10px;
+
+                        .pourcent {
+                            color: #003566;
+                            font-weight: 600;
+                        }
+                    }
+
+                    .progress-bar-sass {
+                        background-color: #003566;
+                        width: 80%;
+                        animation: progressAnimationStrike 6s;
+                        text-align: right;
+                        padding-right: 10px;
+
+                        .pourcent {
+                            color: #003566;
+                            font-weight: 600;
+                        }
+                    }
+
+                    .progress-bar-bootstrap {
+                        background-color: #003566;
+                        width: 80%;
+                        animation: progressAnimationStrike 6s;
+                        text-align: right;
+                        padding-right: 10px;
+
+                        .pourcent {
+                            color: #003566;
+                            font-weight: 600;
+                        }
+                    }
+
+                    .progress-bar-javascript {
+                        background-color: #003566;
+                        width: 80%;
+                        animation: progressAnimationStrike 6s;
+                        text-align: right;
+                        padding-right: 10px;
+
+                        .pourcent {
+                            color: #003566;
+                            font-weight: 600;
+                        }
+                    }
+
+                    .progress-bar-reactjs {
+                        background-color: #003566;
+                        width: 80%;
+                        animation: progressAnimationStrike 6s;
+                        text-align: right;
+                        padding-right: 10px;
+
+                        .pourcent {
+                            color: #003566;
+                            font-weight: 600;
+                        }
+                    }
+
+                    .progress-bar-vuejs {
+                        background-color: #003566;
+                        width: 80%;
+                        animation: progressAnimationStrike 6s;
+                        text-align: right;
+                        padding-right: 10px;
+
+                        .pourcent {
+                            color: #003566;
+                            font-weight: 600;
+                        }
+                    }
+
+                    .progress-bar-github {
+                        background-color: #003566;
+                        width: 80%;
+                        animation: progressAnimationStrike 6s;
+                        text-align: right;
+                        padding-right: 10px;
+
+                        .pourcent {
+                            color: #003566;
+                            font-weight: 600;
+                        }
+                    }
+
+                    .progress-bar-sass {
+                        background-color: #003566;
+                        width: 80%;
+                        animation: progressAnimationStrike 6s;
+                        text-align: right;
+                        padding-right: 10px;
+
+                        .pourcent {
+                            color: #003566;
+                            font-weight: 600;
+                        }
+                    }
+                }
             }
         }
 
-        .circle {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border-radius: 20px;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        .container-bar-back {
 
-            &::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: var(--clr);
-                clip-path: circle(120px at center);
-                transition: 0.5s;
+            h3 {
+                text-align: center;
             }
 
-            .logo-f {
-                position: relative;
-                width: 100px;
-                height: 100px;
-                transition: 0.5s;
-                transition-delay: 0.5s;
+            .container-bar {
+                width: 300px;
+
+                p {
+                    font-size: 15px;
+                    padding-top: 10px;
+                    text-align: left;
+                    font-weight: 600;
+                }
+
+                .progress {
+                    padding: 2px;
+                    background: #b3b4b6;
+                    border-radius: 5px;
+                    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+
+                    .progress-bar-sql {
+                        background-color: #003566;
+                        width: 80%;
+                        animation: progressAnimationStrike 6s;
+                        text-align: right;
+                        padding-right: 10px;
+
+                        .pourcent {
+                            color: #003566;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+
+        .container-bar-CMS {
+
+            h3 {
+                text-align: center;
+            }
+
+            .container-bar {
+                width: 300px;
+
+                p {
+                    font-size: 15px;
+                    padding-top: 10px;
+                    text-align: left;
+                    font-weight: 600;
+                }
+
+                .progress {
+                    padding: 2px;
+                    background: #b3b4b6;
+                    border-radius: 5px;
+                    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+
+                    .progress-bar-wordpress {
+                        background-color: #003566;
+                        width: 80%;
+                        animation: progressAnimationStrike 6s;
+                        text-align: right;
+                        padding-right: 10px;
+
+                        .pourcent {
+                            color: #003566;
+                            font-weight: 600;
+                        }
+                    }
+                }
             }
         }
 
-        .content {
-            position: relative;
-            width: 50%;
-            left: 20%;
-            padding: 20px 20px 20px 40px;
-            opacity: 0;
-            visibility: hidden;
-            transition: 0.5s;
+        .container-bar-divers {
 
-            h2 {
-                color: #000;
-                text-transform: uppercase;
-                font-size: 2.5em;
-                line-height: 1em;
+            h3 {
+                text-align: center;
+
             }
 
-            p {
-                color: #000;
+            .container-bar {
+                width: 300px;
+
+                p {
+                    font-size: 15px;
+                    padding-top: 10px;
+                    text-align: left;
+                    font-weight: 600;
+                }
+
+                .progress {
+                    padding: 2px;
+                    background: #b3b4b6;
+                    border-radius: 5px;
+                    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+
+                    .progress-bar-github {
+                        background-color: #003566;
+                        width: 80%;
+                        animation: progressAnimationStrike 6s;
+                        text-align: right;
+                        padding-right: 10px;
+
+                        .pourcent {
+                            color: #003566;
+                            font-weight: 600;
+                        }
+                    }
+                }
             }
         }
     }
+}
 
-    .card:hover .circle::before {
-        clip-path: circle(400px at center);
+@keyframes progressAnimationStrike {
+    from {
+        width: 0
     }
 
-
-    .logo-b {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(0);
-        height: 200px;
-        transform: 0.5s;
+    to {
+        width: 80%
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
     #techno {
-
         .container-techno {
-            display: flex;
+            padding: 1px 5px;
+            margin: 40px 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
             justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            min-height: 100vh;
-        }
 
-        .card {
-            width: auto;
-            max-width: 350px;
-            align-items: flex-start;
 
-            &:hover {
-                height: 600px;
+            .container-bar-front {
+                grid-column: 1;
+                grid-row: 1;
+                justify-self: center;
+            }
 
-                .logo-b {
-                    top: initial;
-                    bottom: 30px;
-                    left: 50%;
-                    transform: translate(-50%, 0%) scale(1);
-                    height: 100px;
+            .container-bar-back {
+                grid-column: 2;
+                grid-row: 1;
+                justify-self: center;
+            }
+
+            .container-bar-CMS {
+                grid-column: 1;
+                grid-row: 2;
+                justify-self: center;
+
+                h3 {
+                    text-align: center;
+                    margin-top: 20px;
                 }
             }
 
-            .circle{
-                .logo-f {
-                    position: relative;
-                    width: 100px;
-                    height: 100px;
-                    transition: 0.5s;
-                    transition-delay: 0.5s;
-                }
-            }
+            .container-bar-divers {
+                grid-column: 2;
+                grid-row: 2;
+                justify-self: center;
 
-            .content {
-                width: 100%;
-                left: 0;
-                padding: 40px;
+                h3 {
+                    text-align: center;
+                    margin-top: 20px;
+                }
+
             }
-        }
-        .logo-b {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) scale(0);
-            height: 100px;
-            transform: 0.5s;
         }
     }
 }
 
 @media screen and (max-width: 767px) {
     #techno {
-
         .container-techno {
-            display: flex;
+            padding: 1px 5px;
+            margin: 40px 0;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
             justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            min-height: 100vh;
-        }
 
-        .card {
-            width: auto;
-            max-width: 350px;
-            align-items: flex-start;
 
-            &:hover {
-                height: 600px;
+            .container-bar-front {
+                grid-column: 1;
+                grid-row: 1;
+                justify-self: center;
+            }
 
-                .logo-b {
-                    top: initial;
-                    bottom: 30px;
-                    left: 50%;
-                    transform: translate(-50%, 0%) scale(1);
-                    height: 300px;
+            .container-bar-back {
+                grid-column: 1;
+                grid-row: 2;
+                justify-self: center;
+
+                h3 {
+                    margin-top: 30px;
                 }
+
             }
 
-            .content {
-                width: 100%;
-                left: 0;
-                padding: 40px;
+            .container-bar-CMS {
+                grid-column: 1;
+                grid-row: 3;
+                justify-self: center;
             }
-        }
 
-        .logo-b {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) scale(0);
-            height: 10  0px;
-            transform: 0.5s;
+            .container-bar-divers {
+                grid-column: 1;
+                grid-row: 4;
+                justify-self: center;
+
+            }
         }
     }
 }

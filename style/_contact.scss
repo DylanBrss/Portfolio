@@ -1,0 +1,97 @@
+$color_white : #fff;
+$color_2 : #003566;
+
+#contact {
+    background-image: url("../images/contact_tab.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+
+    .container-contact {
+        margin: 50px 0px;
+
+        #contact-perso {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 100px;
+
+            .ct {
+                font-size: 20px;
+                text-align: center;
+
+                svg {
+                    fill: $color_white;
+                }
+
+                #tel {
+                    color: $color_white;
+                }
+
+                #mail {
+                    color: $color_white;
+                }
+            }
+
+            .rs {
+                font-size: 20px;
+                text-align: center;
+
+                svg {
+                    fill: $color_white;
+                }
+
+                #linkedin {
+                    color: $color_white;
+                }
+            }
+
+
+        }
+    }
+}
+
+@media screen and(min-width: 768px) and (max-width: 991px) {
+    #contact {
+        .container-contact {
+
+            #contact-perso {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #contact {
+        min-height: 600px;
+
+        .container-contact {
+            margin: 5px;
+
+            #contact-perso {
+                display: flex;
+                flex-direction: column;
+                margin-top: 50px;
+
+                .ct {
+                    font-size: 20px;
+                    text-align: center;
+                    margin: 20px 0;
+
+                }
+
+                .rs {
+                    font-size: 20px;
+                    text-align: center;
+                    margin-top: 20px;
+
+                }
+            }
+        }
+    }
+}

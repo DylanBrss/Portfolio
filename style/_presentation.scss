@@ -6,25 +6,16 @@ $color_1 : #BEBEBE;
     margin-top: 50px;
 
     .container {
-        //height: 100vh;
         margin-top: 20px;
 
         #presentation-perso {
             display: flex;
-            width: 1000px;
-            margin-top: 100px;
-            background-color: $background-color;
-            box-shadow: 0 0 1.2rem rgb(0, 0, 0, );
-            padding: 50px;
-            position: relative;
-            top: -70px;
-            left: 50%;
-            right: 50%;
-            transform: translateX(-50%);
+            justify-content: center;
 
             .pres {
-                color: #fff;
+                color: #000;
                 font-size: 20px;
+                margin: 100px 50px;
             }
 
             img {
@@ -43,16 +34,17 @@ $color_1 : #BEBEBE;
 
             #presentation-perso {
                 display: flex;
+                justify-content: center;
                 flex-direction: column;
-                width: 750px;
 
                 .pres {
-                    color: #fff;
-                    font-size: 20px;
+                    margin: 5px;
                 }
 
                 img {
-                    margin-top: 2px;
+                    margin-top: -77px;
+                    height: 400px;
+                    width: 400px;
                 }
             }
         }
@@ -62,28 +54,21 @@ $color_1 : #BEBEBE;
 @media screen and (max-width: 767px) {
     #presentation {
         .container {
-            height: 200px;
-            width: 90%;
-            margin-top: 100px;
+            padding: 0 30px 0 30px;
 
-            #presentation-perso{
-                display: grid;
-                grid-template-columns: 1 1fr;
-                padding: 5px;
-                width: 100%;
-                max-height: 1000px;
+            #presentation-perso {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
 
-                .pres{
-                    grid-column: 1;
-                    grid-row: 1;
-                    text-align: center;
+                .pres {
+                    margin: 1px;
                 }
 
-                img{
-                    grid-column: 1;
-                    grid-row: 2;
-                    height: 310px;
-                    padding-top: 10px;
+                img {
+                    margin-top: -77px;
+                    height: 300px;
+                    width: 300px;
                 }
             }
         }

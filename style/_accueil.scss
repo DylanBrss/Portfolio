@@ -1,7 +1,12 @@
 $font-family_btn: 'Macondo', cursive;
 
 #accueil {
-    background-color: #003566;
+    background-image: url("../images/pc_background.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 900px;
 
     .accueil {
         max-width: 1200px;
@@ -57,52 +62,53 @@ $font-family_btn: 'Macondo', cursive;
         }
 
         .cta {
-			display: inline-block;
-			padding: 10px 30px;
-			margin-right: 10px;
-			color: #fff;
-			background-color: transparent;
-			border: 2px solid crimson;
-			font-size: 2rem;
-			text-transform: uppercase;
+            display: inline-block;
+            padding: 10px 30px;
+            margin-right: 10px;
+            color: #fff;
+            background-color: transparent;
+            border: 2px solid #fd2416;
+            border-radius: 5px;
+            font-size: 2rem;
+            text-transform: uppercase;
             text-decoration: none;
-			letter-spacing: 0.1rem;
-			margin-top: 30px;
-			transition: 0.3s ease;
-			transition-property: background-color, color;
+            letter-spacing: 0.1rem;
+            margin-top: 30px;
+            transition: 0.3s ease;
+            transition-property: background-color, color;
 
-			&:hover {
-				color: #fff;
-				background-color: #FF2416;
-			}
-		}
+            &:hover {
+                color: #fff;
+                background-color: #FF2416;
+            }
+        }
     }
 }
 
 @keyframes text_reveal_box {
-	50% {
-		width: 100%;
-		left: 0;
-	}
+    50% {
+        width: 100%;
+        left: 0;
+    }
 
-	100% {
-		width: 0;
-		left: 100%;
-	}
+    100% {
+        width: 0;
+        left: 100%;
+    }
 }
 
 @keyframes text_reveal {
-	100% {
-		color: white;
+    100% {
+        color: white;
         font-weight: 500;
-	}
+    }
 }
 
 @keyframes text_reveal_name {
-	100% {
-		color: crimson;
-		font-weight: 500;
-	}
+    100% {
+        color: crimson;
+        font-weight: 500;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -117,16 +123,20 @@ $font-family_btn: 'Macondo', cursive;
 }
 
 @media screen and (max-width: 1024px) {
-    .img_left {
-        margin-top: 5%;
+    #accueil {
+        min-height: 650px;
 
-        #pres_img {
-            padding: 50px;
-            margin: auto;
+        .img_left {
+            margin-top: 5%;
 
-            img {
-                height: 200px;
-                border-radius: 100px;
+            #pres_img {
+                padding: 50px;
+                margin: auto;
+
+                img {
+                    height: 200px;
+                    border-radius: 100px;
+                }
             }
         }
     }
@@ -134,22 +144,25 @@ $font-family_btn: 'Macondo', cursive;
 
 
 @media screen and (max-width: 768px) {
-    
-    #btn{
-        gap: 10px;
-        display: flex;
-        flex-direction: column;
+    #accueil {
+        min-height: 900px;
 
-        .buttonCV{
-            text-align: center;
-            width: 80%;
-            height: 60px;
-        }
+        #btn {
+            gap: 10px;
+            display: flex;
+            flex-direction: column;
 
-        .buttonContact{
-            text-align: center;
-            width: 80%;
-            height: 60px;
+            .buttonCV {
+                text-align: center;
+                width: 80%;
+                height: 60px;
+            }
+
+            .buttonContact {
+                text-align: center;
+                width: 80%;
+                height: 60px;
+            }
         }
-    }    
+    }
 }

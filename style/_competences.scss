@@ -4,7 +4,6 @@ $color_p: #fff;
 #competences {
 
     .my-skills {
-        margin-top: 10rem;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
 
@@ -21,7 +20,7 @@ $color_p: #fff;
             .svg-container {
                 width: 300px;
                 height: 300px;
-                border: 3px solid #FF2416;
+                border: 3px solid #003570;
                 background-color: #003570;
                 border-radius: 10px;
                 margin-bottom: 1rem;
@@ -63,7 +62,7 @@ $color_p: #fff;
             .svg-container {
                 width: 300px;
                 height: 300px;
-                border: 3px solid #FF2416;
+                border: 3px solid #003570;
                 background-color: #003570;
                 border-radius: 10px;
                 margin-bottom: 1rem;
@@ -105,7 +104,7 @@ $color_p: #fff;
             .svg-container {
                 width: 300px;
                 height: 300px;
-                border: 3px solid #FF2416;
+                border: 3px solid #003570;
                 background-color: #003570;
                 border-radius: 10px;
                 margin-bottom: 1rem;
@@ -147,7 +146,7 @@ $color_p: #fff;
             .svg-container {
                 width: 300px;
                 height: 300px;
-                border: 3px solid #FF2416;
+                border: 3px solid #003570;
                 background-color: #003570;
                 border-radius: 10px;
                 margin-bottom: 1rem;
@@ -189,7 +188,7 @@ $color_p: #fff;
             .svg-container {
                 width: 300px;
                 height: 300px;
-                border: 3px solid #FF2416;
+                border: 3px solid #003570;
                 background-color: #003570;
                 border-radius: 10px;
                 margin-bottom: 1rem;
@@ -223,11 +222,10 @@ $color_p: #fff;
 
 @media screen and (max-width: 1024px) {
     #competences {
-        height: 120vh;
-        margin-top: 400px;
+        margin-top: 20px;
 
         .my-skills {
-            margin-top: 10rem;
+            margin-top: 20px;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
 
@@ -261,15 +259,12 @@ $color_p: #fff;
 
 @media screen and (max-width: 767px) {
     #competences {
-        height: 200vh;
-        margin-top: 400px;
-        margin-bottom: 400px;
+        margin-top: 20px;
 
         .my-skills {
-            margin-top: 10rem;
-            ;
             display: grid;
             grid-template-columns: repeat(1, 1fr);
+            margin-top: 20px;
 
 
             .skill-wp {
