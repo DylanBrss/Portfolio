@@ -1,3 +1,4 @@
+@charset "UTF-8";
 header .navbar {
   display: flex;
   align-items: center;
@@ -1048,7 +1049,7 @@ header .navbar .nav-links .menu li a {
 }
 @media screen and (max-width: 767px) {
   #contact {
-    min-height: 600px;
+    height: 500px;
   }
   #contact .container-contact {
     margin: 5px;
@@ -1082,12 +1083,6 @@ header .navbar .nav-links .menu li a {
   padding-top: 50px;
 }
 
-@media screen and (max-width: 768px) {
-  .site-footer .container {
-    width: 750px;
-    height: 100px;
-  }
-}
 * {
   padding: 0;
   margin: 0;
@@ -1163,6 +1158,22 @@ body .title .ribbon-right {
   border-left: 0;
   border-right: 12px solid transparent !important;
   margin-left: 13px;
+}
+body #gotop {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  transition: visibilité 0s, opacité 0.5s en douceur;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+body #gotop svg {
+  fill: #011527;
+}
+body #gotop svg:hover {
+  height: 60px;
+  width: 60px;
 }
 
 @-webkit-keyframes rotate {

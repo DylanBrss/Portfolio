@@ -100,6 +100,26 @@ body {
             margin-left: 13px;
         }
     }
+
+    #gotop {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        transition: visibilité 0s, opacité 0.5s en douceur;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+
+        svg {
+            fill: #011527;
+
+            &:hover {
+                height: 60px;
+                width: 60px;
+            }
+        }
+    }
+
 }
 
 @keyframes rotate {
